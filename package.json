@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/TIY-Durham/TIY-Catalog/issues"
   },
-  "homepage": "https://github.com/TIY-Durham/TIY-Catalog#readme"
+  "homepage": "https://github.com/TIY-Durham/TIY-Catalog#readme",
+  "devDependencies": {
+    "bower": "^1.5.3"
+  }
 }
