@@ -1,0 +1,20 @@
+{
+  "name": "tiy-catalog",
+  "version": "0.0.0",
+  "homepage": "https://github.com/TIY-Durham/TIY-Catalog",
+  "authors": [
+    "David Rogers <david@theironyard.com>"
+  ],
+  "description": "Etsy Catalog built with Angular JS",
+  "main": "src/index.html",
+  "moduleType": [],
+  "license": "GPL-3.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
