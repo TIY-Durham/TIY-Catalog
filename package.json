@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "browser-sync start --server --directory",
-    "sass": "node-sass src/scss/main.scss src/css/main.css"
+    "sass": "node-sass src/scss/main.scss src/css/main.css",
+    "install:bower": "bower install --save",
+    "postinstall:bower": "wiredep --src 'src/*.html'",
+    "postinstall": "bower install"
   },
   "repository": {
     "type": "git",
