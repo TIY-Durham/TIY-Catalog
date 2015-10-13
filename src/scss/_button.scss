@@ -1,0 +1,18 @@
+#fav-button {
+  border: 1px solid grey;
+  height: 5%;
+  background-color: white;
+  color: #DCDCDC;
+  font-weight: bold;
+}
+
+
+#fav-button:hover {
+  background-color: #DCDCDC;
+  opacity: .3;
+}
+
+i.fa fa-heart-o {
+  background-color: #DCDCDC;
+  padding-right: 4em;
+}
