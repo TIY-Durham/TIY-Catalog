@@ -2,13 +2,17 @@
   float: right;
   .thumbnails {
     list-style-type: none;
-    pa
 
     li {
       display: inline-block;
       border: 3px #FFF solid;
       border-radius: 5px;
       overflow: hidden; // aligns all pics
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
 
       &.item-counter {
         width: 75px;
