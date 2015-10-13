@@ -4,7 +4,9 @@
   "description": "Etsy Catalog built with Angular JS",
   "main": "src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --directory",
+    "sass": "node-sass src/scss/main.scss src/css/main.css"
   },
   "repository": {
     "type": "git",
