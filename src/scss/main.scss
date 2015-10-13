@@ -95,12 +95,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-// bower:scss
-@import "../../bower_components/font-awesome/scss/font-awesome.scss";
-// endbower
-
-@import "grid";
+// // bower:scss
+// @import "../../bower_components/font-awesome/scss/font-awesome.scss";
+// // endbower
 @import "otherItems";
+@import "grid";
+
 
 main.container {
   @extend .grid;
