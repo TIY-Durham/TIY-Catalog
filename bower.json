@@ -6,7 +6,7 @@
     "David Rogers <david@theironyard.com>"
   ],
   "description": "Etsy Catalog built with Angular JS",
-  "main": "src/index.html",
+  "main": "src/listing--rating-panel.html",
   "moduleType": [],
   "license": "GPL-3.0",
   "private": true,
