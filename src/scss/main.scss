@@ -98,9 +98,9 @@ textarea {
 // // bower:scss
 // @import "../../bower_components/font-awesome/scss/font-awesome.scss";
 // // endbower
-@import "otherItems";
-@import "grid";
 
+@import "grid";
+@import "otherItems";
 
 main.container {
   @extend .grid;

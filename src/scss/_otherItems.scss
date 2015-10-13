@@ -1,5 +1,9 @@
 .otherItems {
   .thumbnails {
     list-style-type: none;
+
+    li {
+      display: inline-block;
+    }
   }
 }
