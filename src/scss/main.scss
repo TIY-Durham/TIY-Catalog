@@ -99,6 +99,16 @@ textarea {
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 
+@import "grid";
+
+main.container {
+  @extend .grid;
+
+  width: auto; margin: 0 2%;
+  max-width: 60em;
+
+} // END main.container
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
