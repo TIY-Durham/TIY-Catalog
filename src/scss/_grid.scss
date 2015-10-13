@@ -20,7 +20,7 @@
 
       @if ( $span < $units ){
         .pad-#{$span}-#{$units} {
-          margin-left: 100% * ($span/$units);
+          margin-bottom: 100% * ($span/$units);
         }
       }
     } // END @for $span
