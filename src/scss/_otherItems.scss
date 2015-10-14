@@ -1,5 +1,8 @@
 .otherItems {
   float: right;
+  background-color: #F5F4F1;
+  font-family: Arial;
+
   .thumbnails {
     list-style-type: none;
 
@@ -8,7 +11,7 @@
       border: 3px #FFF solid;
       border-radius: 5px;
       overflow: hidden; // aligns all pics
-      margin-right: 10px;
+      margin-right: 11px;
 
       &:last-child {
         margin-right: 0;
@@ -19,6 +22,18 @@
         height: 75px;
         text-align: center;
         line-height: 1;
+        background: #FFF;
+
+          a {
+            text-decoration: none;
+            color: #34A8C4;
+            font-size: 20px;
+
+              p {
+                color: #999999;
+                font-size: 10px;
+              }
+          }
       }
     }
   }
