@@ -37,9 +37,20 @@ body {
   }
 
   .grid {
-    overflow: auto;
+    //overflow: auto;
     padding: 0.75em 0 0.75em 0.75em;
     background-color: white;
+
+    // Clearfix that grid yo!
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
+
+    &:after {
+      clear: both;
+    }
 
     .store-heading {
       background-color: lightgrey;
