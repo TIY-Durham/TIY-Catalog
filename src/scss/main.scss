@@ -112,6 +112,42 @@ main.container {
   // width: auto; margin: 0 2%;
   // max-width: 60em;
 
+  .container {
+    text-align: center;
+    width: 80%;
+  }
+  a {
+    text-decoration: none;
+    color: #0192b5;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+  .textarea {
+    outline: 1px solid black;
+    margin-left: 20vw;
+    margin-top: -16px;
+    z-index: -1;
+    position: relative;
+  }
+
+  .itemdetails {
+    background-color: white;
+    border-bottom: white;
+  }
+  .itemdetails:hover {
+    text-decoration: underline;
+  }
+  img {
+    color: black;
+    width: 5em;
+    height: 5em;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 0.1em; }
+
+
 } // END main.container
 
 // FIXME: Move this chunk into a separate file.
