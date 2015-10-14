@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "homepage": "https://github.com/TIY-Durham/TIY-Catalog",
   "authors": [
-    "David Rogers <david@theironyard.com>"
+    "David Rogers <david@theironyard.com>",
+    "Rosa Lopez Sanchez <r215130@gmail.com>"
   ],
   "description": "Etsy Catalog built with Angular JS",
-  "main": "src/listing--rating-panel.html",
+  "main": "src/index.html",
   "moduleType": [],
   "license": "GPL-3.0",
   "private": true,
