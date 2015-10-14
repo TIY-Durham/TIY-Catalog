@@ -1,0 +1,28 @@
+$base-color: #F0EAD6;
+
+
+#fav-button {
+  border: 1px solid grey;
+  height: 5%;
+  background-color: lighten($base-color, 98%);
+  color: #ACACAC;
+  font-weight: normal;
+  border-radius: .4em;
+  text-align: center;
+  padding-right: .5em;
+}
+
+
+#fav-button:hover {
+  background-color: #DCDCDC;
+  color: #ACACAC;
+}
+
+.fa {
+  padding-right: .5em;
+}
+
+.fa-heart-o {
+  color: grey;
+
+}
