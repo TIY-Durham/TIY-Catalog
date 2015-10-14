@@ -7,6 +7,9 @@
       $scope.listing = {
         title: 'Something Random!',
         price: 1234.56,
+        shop: {
+          name: 'My Awesome Sauce'
+        }
       };
 
       // AND DON'T DELETE ANYTHING BELOW
