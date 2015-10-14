@@ -1,12 +1,18 @@
-.container {
-  // background-color: #d7d7d4;
+main.container {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.main-content {
+  background: #EFEFEB;
+  width: 100%;
 }
 
 .col-1-4 {
-  border: 2px solid orange;
-  background-color: pink;
+  // outline: 1px solid #000000;
 }
 
 img {
   text-align: center;
+  width: 100%;
 }

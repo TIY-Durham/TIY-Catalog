@@ -1,6 +1,7 @@
 .grid {
   @extend .clearfix;
-
+  width: 80%;
+  margin: 0 auto;
   $gutter-width: 0.5em;
 
   [class*="col-"] {
