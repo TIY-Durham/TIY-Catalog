@@ -102,15 +102,19 @@ textarea {
 @import "grid";
 @import "trending-item-box";
 @import "listing--rating-panel";
+@import "trending-four-column-grid";
 
 main.container {
   @extend .grid;
-
-  width: auto; margin: 0 2%;
-  max-width: 60em;
+  margin: 0 auto;
+  width: 80%;
+  // width: auto; margin: 0 2%;
+  // max-width: 60em;
 
 } // END main.container
-header {
+
+// FIXME: Move this chunk into a separate file.
+header { // FIXME: A little more specific here...
   width: 100%;
   height: 30%;
   .store-profile {
@@ -140,6 +144,7 @@ header {
     }
   }
 }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

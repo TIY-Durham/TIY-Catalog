@@ -21,17 +21,54 @@
         <![endif]-->
 
         <main class="container">
-        <!-- Add your site or application content here -->
-          <section class="trending-item-box">
-            <a src="#"><img src="http://lorempixel.com/224/299/" class="item-image"></a><!--Link to Listing Page-->
-            <div class="listing-info">
-              <a src="#" class="listing-title"><span >{{listing.title????????????}}</span></a><!--Link to Listing Page-->
-              <a src="#" class="shop-name"><span>{{shop_name}}</span></a><!--Link to shop Page-->
-              <a src="#" class="listing-price"><span>${{listing.price}}USD</span></a><!--Link to shop Page-->
-            </div>
-          </section><!-- .item-box -->
+          <!-- Add your site or application content here -->
+          <header>
+            <a href="#" class="pg-title">Trending Items</a>
+            <p>Explore shoppers' top finds from around the marketplace</p>
+          </header>
 
-        </main><!-- .container -->
+            <section class="grid">
+              <!-- <div class="col-1-6 pad-1-32">
+                blank
+              </div> -->
+              <div class="col-1-4 pad-1-32">
+                <section class="trending-item-box">
+                  <a src="#"><img src="http://lorempixel.com/224/299/" class="item-image"></a><!--Link to Listing Page-->
+                  <div class="listing-info">
+                    <a src="#" class="listing-title"><span >{{listing.title????????????}}</span></a><!--Link to Listing Page-->
+                    <a src="#" class="shop-name"><span>{{shop_name}}</span></a><!--Link to shop Page-->
+                    <a src="#" class="listing-price"><span>${{listing.price}}USD</span></a><!--Link to shop Page-->
+                  </div>
+                </section><!-- .item-box -->
+              </div>
+              <div class="col-1-4 pad-1-32">
+                <img src="http://lorempixel.com/output/abstract-h-g-234-480-6.jpg">
+
+              </div>
+              <div class="col-1-4 pad-1-32">
+                <img src="http://lorempixel.com/output/abstract-h-g-234-480-6.jpg">
+              </div>
+              <div class="col-1-4 pad-1-32">
+                <img src="http://lorempixel.com/output/abstract-h-g-234-480-6.jpg">
+              </div>
+
+              <section class="row-2">
+                <div class="col-1-4 pad-1-32">
+                   <img src="http://lorempixel.com/output/abstract-h-g-234-480-6.jpg">
+                </div>
+                <div class="col-1-4 pad-1-32">
+                  <img src="http://lorempixel.com/output/abstract-h-g-234-480-6.jpg">
+                </div>
+                <div class="col-1-4 pad-1-32">
+                  <img src="http://lorempixel.com/output/abstract-h-g-234-480-6.jpg">
+                </div>
+                <div class="col-1-4 pad-1-32">
+                  <img src="http://lorempixel.com/output/abstract-h-g-234-480-6.jpg">
+                </div>
+            </section>
+
+
+       </main><!-- .container -->
 
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
