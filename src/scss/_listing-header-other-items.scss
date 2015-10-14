@@ -1,9 +1,9 @@
-.otherItems {
+.headerOtherItems {
   float: right;
   background-color: #F5F4F1;
   font-family: Arial;
 
-  .thumbnails {
+  .otherItemsThumbnails {
     list-style-type: none;
 
     li {
@@ -17,7 +17,7 @@
         margin-right: 0;
       }
 
-      &.item-counter {
+      &.headerItemCounter {
         width: 75px;
         height: 75px;
         text-align: center;
