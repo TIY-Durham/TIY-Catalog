@@ -1,0 +1,22 @@
+.grid {
+
+  .trending-item-box {
+    position: relative;
+  }
+
+
+
+  button {
+    display: none;
+  }
+
+  div:hover {
+    .favorite-button {
+      display: inline;
+      position: absolute;
+      right: 20px;
+      top: 10px;
+    }
+
+  }
+}
