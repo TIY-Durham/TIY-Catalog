@@ -1,0 +1,38 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+  section.store-front {
+    //  width: 40%;
+        max-width: 388px;
+        margin:0 auto;
+        border: 6px solid #E5F4F7;
+        border-radius: 5px;
+
+    header {
+     text-align: center;
+     padding-top: 0.2em;
+    }
+      div a {
+       color: #000;
+       text-decoration: none;
+     }
+     div {
+        margin: 13px;
+     }
+      div h3 {
+        color: #D3D3D1;
+      }
+ }
+section.column {
+   width: 100%;
+   display: inline-block;
+   margin: 0 auto;
+
+}
+.column div {
+  border: 1px solid gray;
+  height: 171px;
+  padding: 2px;
+  float: left;
+}
