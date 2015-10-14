@@ -103,12 +103,13 @@ textarea {
 
 main.container {
   @extend .grid;
-
-  width: auto; margin: 0 2%;
-  max-width: 60em;
+  margin: 0 auto;
+  width: 80%;
+  // width: auto; margin: 0 2%;
+  // max-width: 60em;
 
 } // END main.container
-
+@import "trending-four-column-grid";
 /* ==========================================================================
    Helper classes
    ========================================================================== */
