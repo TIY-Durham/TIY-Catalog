@@ -1,0 +1,7 @@
+{
+  title: 'Something Random!',
+  price: 1234.56,
+  shop: {
+    name: 'My Awesome Sauce'
+  }
+}
