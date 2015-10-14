@@ -1,11 +1,11 @@
-$base-color: #F0EAD6;
-
+$color: #ACACAC;
+$grey: #D3D3D3;
 
 #fav-button {
-  border: 1px solid grey;
+  border: 1px solid $grey;
   height: 5%;
-  background-color: lighten($base-color, 98%);
-  color: #ACACAC;
+  background-color: lighten(#F0EAD6, 35%);
+  color: $color;
   font-weight: normal;
   border-radius: .4em;
   text-align: center;
@@ -14,15 +14,10 @@ $base-color: #F0EAD6;
 
 
 #fav-button:hover {
-  background-color: #DCDCDC;
-  color: #ACACAC;
+  background-color: $grey;
+  color: $color;
 }
 
 .fa {
   padding-right: .5em;
-}
-
-.fa-heart-o {
-  color: grey;
-
 }
