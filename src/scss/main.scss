@@ -95,20 +95,21 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-// bower:scss
-@import "../../bower_components/font-awesome/scss/font-awesome.scss";
-// endbower
 
 @import "grid";
 @import "trending-item-box";
 
-main.container {
-  @extend .grid;
+// main.container {
+//   @extend .grid;
+//
+//   width: auto; margin: 0 2%;
+//   max-width: 60em;
+//
+// } // END main.container
 
-  width: auto; margin: 0 2%;
-  max-width: 60em;
-
-} // END main.container
+// bower:scss
+@import "../../bower_components/font-awesome/scss/font-awesome.scss";
+// endbower
 
 /* ==========================================================================
    Helper classes
