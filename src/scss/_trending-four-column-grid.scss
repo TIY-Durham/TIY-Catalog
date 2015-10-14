@@ -3,6 +3,39 @@ main.container {
   width: 100%;
 }
 
+header.trending {
+  font-family: "Guardian-EgypTT", Georgia, serif;
+  margin: 0 auto;
+  padding-left: 11%;
+  border-top: 1px solid #d7d7d4;
+  border-bottom: 1px solid #d7d7d4;
+  background: #F5F5F1;
+
+      h1 {
+        color: #333;
+        size: 22pt;
+        margin-bottom: -1.5%;
+      }
+
+      p {
+        color: #999;
+        size: 16pt;
+        margin-bottom: 2.5%;
+      }
+
+      a[href] {
+        text-decoration: none;
+        }
+
+
+}
+
+
+
+
+
+
+
 .main-content {
   background: #EFEFEB;
   width: 100%;
@@ -11,9 +44,7 @@ main.container {
   padding-top: 2%;
 }
 
-.col-1-4 {
-  // outline: 1px solid #000000;
-}
+
 
 img {
   text-align: center;
