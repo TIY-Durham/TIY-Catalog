@@ -6,7 +6,7 @@
   .otherItemsThumbnails {
     list-style-type: none;
 
-    li {
+    li.headerThumbnail {
       display: inline-block;
       border: 3px #FFF solid;
       border-radius: 5px;
@@ -36,5 +36,18 @@
           }
       }
     }
+  }
+}
+
+li.headerThumbnail {
+  & img:hover {
+  opacity: .9;
+  }
+}
+li.headerItemCounter {
+  & a:hover {
+    background: blue;
+    width: 65px;
+    height: 65px;
   }
 }
