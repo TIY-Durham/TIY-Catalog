@@ -9,6 +9,7 @@
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
         <!-- bower:css -->
         <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
@@ -36,7 +37,8 @@
              <section class="second-column-review">
                 <p class="review-date">{{review date}}</p>
                 <div class="review-starts">
-                  <!-- pseudo element for starts??? -->
+                <div class="rating">
+                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
                 </div>
                 <section class="item-im-descr">
                   <a class="item-img" href="#{{item-img}}"><img src="https://img0.etsystatic.com/068/0/6135474/il_75x75.767391102_mwt1.jpg" alt="" /></a>
@@ -47,6 +49,7 @@
 
               </section>
             </li>
+            <li class="review"></li>
           </ul>
         </section><!-- .end section reviews -->
         </main><!-- .container -->
