@@ -45,9 +45,7 @@ li.headerThumbnail {
   }
 }
 li.headerItemCounter {
-  & a:hover {
-    background: blue;
-    width: 65px;
-    height: 65px;
+  div.innerThumbnail:hover {
+    background: #CCE9F0;
   }
 }
