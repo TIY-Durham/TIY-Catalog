@@ -21,11 +21,34 @@
         <![endif]-->
 
         <main class="container">
+          <section class="reviews">
+          <ul class="panel-rating">
+            <li class="review">
+              <section class="first-column-review">
+                <a class="im-buyer"href="#buyer">
+                  <img src="https://img0.etsystatic.com/100/0/72350745/iusa_75x75.34516074_9qam.jpg" alt="" />
+                     <!-- {{img from buyer}} -->
+                </a>
+                <p class="review-from">Reviewed by
+                  <a href="#buyer">{{buyer name}}</a>
+                </p>
+             </section><!-- .end of section first-column-review -->
+             <section class="second-column-review">
+                <p class="review-date">{{review date}}</p>
+                <div class="review-starts">
+                  <!-- pseudo element for starts??? -->
+                </div>
+                <section class="item-im-descr">
+                  <a class="item-img" href="#{{item-img}}"><img src="https://img0.etsystatic.com/068/0/6135474/il_75x75.767391102_mwt1.jpg" alt="" /></a>
+                  <a class="item-descr" href="#{{item-descr}}">{{item description}}</a>
+                </section>
 
-          <nav>
-            <a href="#"></a>
-          </nav>
 
+
+              </section>
+            </li>
+          </ul>
+        </section><!-- .end section reviews -->
         </main><!-- .container -->
 
         <!-- bower:js -->
