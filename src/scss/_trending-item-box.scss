@@ -1,0 +1,37 @@
+.trending-item-box {
+  box-sizing: border-box;
+  width: auto;
+  margin: 0 auto;
+  padding: 5px;
+  box-shadow: 0 0 5px lightgray;
+  border-radius: 5px;
+  background-color: white;
+  float: left;
+    .item-image {
+      float: left;
+    }
+    .listing-info {
+      clear:both;
+      .listing-title {
+        display: block;
+        width: 100%;
+        color: gray;
+        font-size: 0.8em;
+        padding-top: 5px;
+      }
+      .shop-name {
+        display: inline-block;
+        width: 98% *(1/2);
+        font-size: 0.8em;
+        color: lightgray;
+        padding-bottom: 4px;
+      }
+      .listing-price {
+        display: inline-block;
+        width: 98% *(1/2);
+        text-align: right;
+        color: #78C042;
+        font-size: 0.7em;
+      }
+    } // listing-info
+}// .item-box
