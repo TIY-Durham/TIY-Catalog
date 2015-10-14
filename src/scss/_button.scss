@@ -1,0 +1,23 @@
+$color: #ACACAC;
+$grey: #D3D3D3;
+
+#fav-button {
+  border: 1px solid $grey;
+  height: 5%;
+  background-color: lighten(#F0EAD6, 35%);
+  color: $color;
+  font-weight: normal;
+  border-radius: .4em;
+  text-align: center;
+  padding-right: .5em;
+}
+
+
+#fav-button:hover {
+  background-color: $grey;
+  color: $color;
+}
+
+.fa {
+  padding-right: .5em;
+}
