@@ -1,0 +1,3 @@
+;(function(){ // No params necessary...
+  // TODO: Create a module named "tiy-catalog--trending"
+})(); // "Simple" IIFE
