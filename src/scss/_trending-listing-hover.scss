@@ -20,11 +20,11 @@
         .favorite-button {
           display: inline-block;
           position: absolute;
-          right: 42px;
+          right: 49px;
           top: 10px;
           color: #d7d7d4;
 
-              &::before{
+              &::before {
                 content: '\f004';
                 font-size: 9pt;
               }
@@ -36,10 +36,18 @@
           color: #d7d7d4;
           right: 10px;
           top: 10px;
+          padding-right: 4%;
 
               &::before {
                 content: "\f0c9";
                 font-size: 9pt;
+                margin-right: 25%;
+              }
+
+              &::after {
+                content: "\f0d7";
+                font-size: 9pt;
+
               }
         }
 
