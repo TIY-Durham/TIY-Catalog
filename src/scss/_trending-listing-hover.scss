@@ -2,46 +2,47 @@
   font-family: FontAwesome;
 
 
-  .trending-item-box {
-    position: relative;
-
-  }
-
-
-
-  button {
-    display: none;
-
-  }
-
-
-  div:hover {
-    .favorite-button {
-      display: inline-block;
-      position: absolute;
-      right: 20px;
-      top: 10px;
-
-      &::before{
-        content: '\f08a';
-        font-size: 12pt;
+      .trending-item-box {
+        position: relative;
       }
-    }
 
 
-
-    .collect-button {
-      display: inline-block;
-      position: absolute;
-      right: 10px;
-      top: 10px;
-
-      &::before {
-        content: "\f0c9";
-        font-size: 12pt;
-
+      button {
+        display: none;
+        background: #ffffff;
+        border: 1px solid #d7d7d4;
+        font-size: 11pt;
+        border-radius: 3px;
       }
-    }
-  }
+
+
+      div:hover {
+        .favorite-button {
+          display: inline-block;
+          position: absolute;
+          right: 42px;
+          top: 10px;
+          color: #d7d7d4;
+
+              &::before{
+                content: '\f004';
+                font-size: 9pt;
+              }
+      }
+
+        .collect-button {
+          display: inline-block;
+          position: absolute;
+          color: #d7d7d4;
+          right: 10px;
+          top: 10px;
+
+              &::before {
+                content: "\f0c9";
+                font-size: 9pt;
+              }
+        }
+
+  } //END HOVER
 
 } //.grid
