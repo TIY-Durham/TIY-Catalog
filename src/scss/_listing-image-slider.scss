@@ -32,18 +32,15 @@
 
 .container {
   padding: 1em;
-  outline: 3px solid red;
 
   .img-slider-container {
-    outline: 3px solid blue;
 
     #listing-imgs-main {
-      outline: 3px solid green;
 
       #prev {
         position: absolute;
         bottom: 50%;
-        left: 2.75%;
+        left: 3%;
         padding: 0.5em;
         border: 2px solid white;
         background-color: grey;
@@ -59,7 +56,7 @@
       #next {
         position: absolute;
         bottom: 50%;
-        right: 2.75%;
+        right: 3%;
         padding: 0.5em;
         border: 2px solid white;
         background-color: grey;
