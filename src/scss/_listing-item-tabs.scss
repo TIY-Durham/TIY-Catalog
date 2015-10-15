@@ -1,20 +1,37 @@
 section.col-2-3 {
   // background-color: lightgray;
 }
+$border-color: #DADBD6;
+
 
 div#item-tabs-section {
+  margin-top: 10%;
+  border: solid 1px black;
+  padding-top: 5%;
+  padding-bottom: 50%;
   nav#item-tabs {
     text-align: center;
-    border-bottom: solid 1px lightgray;
+    border-bottom: solid 1px $border-color;
+    padding-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
     a {
       text-decoration: none;
-      border-top: solid 1px lightgray;
-      border-left: solid 1px lightgray;
-      border-right: solid 1px lightgray;
+      padding: 10px 12px;
+      margin-left: -5px;
+      border-top: solid 1px $border-color;
+      border-left: solid 1px $border-color;
+      border-right: solid 1px $border-color;
+      background-color: #F5F6F1;
       color: #0192B5;
     }
+    a:hover {
+      text-decoration: underline;
+    }
     a.active {
+      background-color: white;
       color: black;
+      border-bottom: 1px solid white;
     }
   } //end nav#item-tabs
 
