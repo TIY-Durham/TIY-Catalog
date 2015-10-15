@@ -102,6 +102,7 @@ textarea {
 @import "grid";
 @import "trending-item-box";
 @import "listing-header-other-items";
+@import "listing-header";
 
 main.container {
   @extend .grid;
@@ -306,5 +307,3 @@ header {
         page-break-after: avoid;
     }
 }
-
-@import "feature--listing-heading"
