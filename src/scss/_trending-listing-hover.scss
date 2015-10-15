@@ -1,22 +1,47 @@
 .grid {
+  font-family: FontAwesome;
+
 
   .trending-item-box {
     position: relative;
+
   }
 
 
 
   button {
     display: none;
+
   }
+
 
   div:hover {
     .favorite-button {
-      display: inline;
+      display: inline-block;
       position: absolute;
       right: 20px;
       top: 10px;
+
+      &::before{
+        content: '\f08a';
+        font-size: 12pt;
+      }
     }
 
+
+
+    .collect-button {
+      display: inline-block;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+
+      &::before {
+        content: "\f0c9";
+        font-size: 12pt;
+
+      }
+    }
   }
-}
+
+} //.grid
