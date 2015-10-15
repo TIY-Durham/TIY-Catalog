@@ -47,14 +47,30 @@ section.item-im-descr{
   height: 90px;
 }
 p.review-date{
+  color: lightgray;
   text-align: right;
   margin-right: 0.5em;
   margin-bottom: 0;
 }
+section.item-im-descr{
+  height: 120px;
+}
 a.item-img{
+  text-decoration: none;
   margin:1.5em 0 0 0;
   border-top: 0.2em;
   padding-top: 0.2em;
+}
+
+p.item-descr-text{
+  margin-left: 9em;
+  color: lightgray;
+  text-decoration: none;
+  float: right;
+  position: absolute;
+  height: auto;
+  width: 350px;
+
 }
 // span{
 //   color: #FFCC00;
