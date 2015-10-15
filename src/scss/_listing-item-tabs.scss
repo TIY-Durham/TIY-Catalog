@@ -2,14 +2,26 @@ section.col-2-3 {
   // background-color: lightgray;
 }
 
-nav#item-tabs {
-  text-align: center;
-  border-bottom: solid 1px lightgray;
-  a {
-    text-decoration: none;
-    border-top: solid 1px lightgray;
-    border-left: solid 1px lightgray;
-    border-right: solid 1px lightgray;
+div#item-tabs-section {
+  nav#item-tabs {
+    text-align: center;
+    border-bottom: solid 1px lightgray;
+    a {
+      text-decoration: none;
+      border-top: solid 1px lightgray;
+      border-left: solid 1px lightgray;
+      border-right: solid 1px lightgray;
+      color: #0192B5;
+    }
+    a.active {
+      color: black;
+    }
+  } //end nav#item-tabs
 
+  section {
+    display: none;
   }
-}
+  section.active {
+    display: inherit;
+  }
+}//end div#item-tabs-section
