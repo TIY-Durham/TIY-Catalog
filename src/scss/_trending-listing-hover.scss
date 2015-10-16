@@ -15,7 +15,6 @@
         display: none;
         background: #ffffff;
         border: 1px solid #d7d7d4;
-        font-size: 11pt;
         border-radius: 3px;
       }
 
@@ -31,9 +30,23 @@
 
               &::before { //HEART ICON
                 content: '\f004';
-                font-size: 9pt;
               }
         }
+
+
+        .favorite-button.user-favorite { //favorited
+          display: inline-block;
+          position: absolute;
+          right: 49px;
+          top: 10px;
+          color: #ff0000;
+
+              &::before {
+                content: '\f004';
+              }
+        }
+
+
 
         .collect-button {
           display: inline-block;
@@ -90,12 +103,10 @@
                       padding: 5px 5px 4px;
                       font-size: 8pt;
                     }
-
           }
 
 
 
-
-  } //END HOVER
+      } //.trending-item-box:hover
 
 } //.grid
