@@ -8,7 +8,7 @@ main.container {
   a#learnmore {
     text-decoration: none;
     color: #0192b5;
-    margin-left: 10em;
+    margin-left: 32%;
     &:hover {
         text-decoration: underline;
       }
@@ -29,18 +29,31 @@ main.container {
     height: 5em;
     text-align: center;
     border-radius: 50%;
-    margin-left: 17em;
+    margin-left: 45%;
+    margin-top: 1em;
   }
   .meet-the-owner {
     text-align: center;
   }
   .meet-the-user {
     text-align: center;
+    color: rgb(102, 102, 102);
+    font-size: medium;
+  }
+  a.meet-the-store {
+    text-decoration: none;
+    color: black;
+    &:hover {
+        text-decoration: underline;
+      }
   }
     p {
       margin-left: 2%;
-      margin-right: 2%;
+      margin-right: 5%;
+      color: rgb(102, 102, 102);
     }
+
+
 
 
 } // END main.container
