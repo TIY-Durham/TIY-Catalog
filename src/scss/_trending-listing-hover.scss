@@ -55,16 +55,17 @@
               }
         }
 
-          .caret::after, .caret::before { //CARET
-          bottom: 100%;
-          border: solid transparent;
-          content: " ";
-          position: absolute;
-          pointer-events: none;
-          left: 47%;
-          border-bottom-color: #ffffff;
-          border-width: 7px; //size of caret
-        }
+          .collect-drop-down::after,
+          .collect-drop-down::before { //CARET
+            bottom: 100%;
+            border: solid transparent;
+            content: " ";
+            position: absolute;
+            pointer-events: none;
+            left: 47%;
+            border-bottom-color: #ffffff;
+            border-width: 7px; //size of caret
+          }
 
 
           .collect-drop-down {
