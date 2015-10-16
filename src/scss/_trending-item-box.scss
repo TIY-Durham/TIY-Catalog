@@ -25,6 +25,8 @@
         font-size: 0.8em;
         color: lightgray;
         padding-bottom: 4px;
+        position: relative;
+        float: left; //camille add
       }
       .listing-price {
         display: inline-block;
