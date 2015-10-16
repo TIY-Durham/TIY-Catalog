@@ -36,16 +36,28 @@
                 <article class="trending-item-box pad-1-8">
                   <a src="#"><img src="http://lorempixel.com/224/299/" class="item-image"></a><!--Link to Listing Page-->
 
-
-                    <button class="favorite-button">HEART</button>
-                    <button class="collect-button">MENU</button>
+                  <section class="trending-hover-buttons"> <!-- HOVER BUTTONS -->
+                    <div class="hover-favorite-button">
+                      <button class="favorite-button"></button>
+                    </div>
+                    <div class="hover-collect-button">
+                      <button class="collect-button"></button>
+                      <article class="collect-drop-down">
+                        <p>your list</p> <!--TODO: change into ahref and remove link styles -->
+                        <input type="text" class="list-text" placeholder="New list">
+                      </article>
+                  </div>
+                </section> <!-- END HOVER BUTTONS -->
 
                   <div class="listing-info">
                     <a src="#" class="listing-title"><span >{{listing.title}}</span></a><!--Link to Listing Page-->
                     <a src="#" class="shop-name"><span>{{shop_name}}</span></a><!--Link to shop Page-->
-                    <a src="#" class="listing-price"><span>${{ listing.price}}USD</span></a><!--Link to shop Page-->
+                    <a src="#" class="listing-price"><span>{{ listing.price}}USD</span></a><!--Link to shop Page-->
                   </div>
                 </article><!-- .item-box -->
+
+                  <div><a href="{{listing.url}}" class="similar-items">See similar items</a></div>
+
                 <article class="trending-item-box pad-1-8">
                   <a src="#"><img src="http://lorempixel.com/224/240/" class="item-image"></a><!--Link to Listing Page-->
                   <div class="listing-info">
