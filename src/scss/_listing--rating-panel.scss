@@ -37,7 +37,7 @@ p.review-from{
   height: 200px;
   border-left: 1em;
 }
-div.rating{
+div.feedback-stars{
   position: absolute;
   margin-top: -1.4em;
   content: "\2605";
@@ -47,14 +47,32 @@ section.item-im-descr{
   height: 90px;
 }
 p.review-date{
+  color: lightgray;
   text-align: right;
   margin-right: 0.5em;
   margin-bottom: 0;
 }
+section.item-im-descr{
+  height: 120px;
+}
 a.item-img{
+  text-decoration: none;
   margin:1.5em 0 0 0;
   border-top: 0.2em;
   padding-top: 0.2em;
+}
+
+p.item-descr-text{
+  margin-right: 11em;
+  margin-bottom: 10em;
+  color: lightgray;
+  text-decoration: none;
+  float: right;
+  // position: relative;
+  height: auto;
+  width: 350px;
+
+
 }
 // span{
 //   color: #FFCC00;
