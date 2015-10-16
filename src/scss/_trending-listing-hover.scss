@@ -6,6 +6,10 @@
         position: relative;
       }
 
+      article.collect-drop-down {
+        display: none;
+      }
+
 
       button {
         display: none;
@@ -17,6 +21,7 @@
 
 
       article.trending-item-box:hover {
+
         .favorite-button {
           display: inline-block;
           position: absolute;
@@ -24,11 +29,11 @@
           top: 10px;
           color: #d7d7d4;
 
-              &::before {
+              &::before { //HEART ICON
                 content: '\f004';
                 font-size: 9pt;
               }
-      }
+        }
 
         .collect-button {
           display: inline-block;
@@ -38,28 +43,39 @@
           top: 10px;
           padding-right: 4%;
 
-              &::before {
+              &::before { //HAMBURG ICON
                 content: "\f0c9";
                 font-size: 9pt;
                 margin-right: 25%;
               }
 
-              &::after {
+              &::after { //CARET ICON
                 content: "\f0d7";
                 font-size: 9pt;
-
               }
         }
+
+          .caret::after, .caret::before { //CARET
+          bottom: 100%;
+          border: solid transparent;
+          content: " ";
+          position: absolute;
+          pointer-events: none;
+          left: 47%;
+          border-bottom-color: #ffffff;
+          border-width: 7px; //size of caret
+        }
+
 
           .collect-drop-down {
             position: absolute;
             display: block;
             background: #ffffff;
-            border: solid 1px #CBC9C7;
+            border: 1px solid #CBC9C7;
             padding: 0 10px 10px 10px;
             right: -45px;
             top: 50px;
-            z-index:1;
+            z-index:1; // overlays other elements
 
                     p {
                       text-transform: uppercase;
