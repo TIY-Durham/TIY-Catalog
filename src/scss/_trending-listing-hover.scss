@@ -16,7 +16,7 @@
       }
 
 
-      div:hover {
+      article.trending-item-box:hover {
         .favorite-button {
           display: inline-block;
           position: absolute;
@@ -50,6 +50,34 @@
 
               }
         }
+
+          .collect-drop-down {
+            position: absolute;
+            display: block;
+            background: #ffffff;
+            border: solid 1px #CBC9C7;
+            padding: 0 10px 10px 10px;
+            right: -45px;
+            top: 50px;
+            z-index:1;
+
+                    p {
+                      text-transform: uppercase;
+                      color: #CBC9C7;
+                      font-size: 8pt;
+                    }
+
+                    .list-text {
+                      border: 1px solid #D5D4D4;
+                      outline: none;
+                      padding: 5px 5px 4px;
+                      font-size: 8pt;
+                    }
+
+          }
+
+
+
 
   } //END HOVER
 
