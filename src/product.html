@@ -73,16 +73,209 @@
         </section> <!-- Left Column Ends Here -->
         <section class="col col-1-3"> <!-- Right Column Starts Here -->
           <div class="module"> <!-- Risky Business Sarts Here -->
-            <h2>Listing Overview</h2>
-            <img src="http://placehold.it/200x450">
+            <section class="item-overview">
+              <h1 class="overview-title">{{ title }}</h1>
+              <p class="overview-price">{{ price }}</p>
+              <button id="ask-a-question">Ask A Question</button>
+              <!-- Eric your code can go in the inside the aside tag below -->
+              <aside class="name-me">
+              </aside>
+              <h3>Overview</h3>
+              <ul class="overview-details">
+                <li>Handmade item</li>
+                <li>Materials: maple, mineral oil, utile, zebrawood, engraving, padouk, cherry, mahogany, burl, tigerwood, oak, olivewood, ash</li>
+                <li>Made to order</li>
+                <li>Ships from Winona Lake, Indiana to select countries.</li>
+                <li>Feedback: {{ count }} reviews</li>
+                <li>Favorited by: {{ ??? }} people</li>
+              </ul>
+              <p class="gift-cards"></p>
+              <button class="buy-it-now" type="button">Buy It Now</button>
+              <button class="add-to-cart" type="button">Add To Cart</button>
+              </section>
           </div> <!-- Risky Business Ends Here-->
           <div class="module"> <!-- Night Train Starts Here-->
             <h2>Social Share</h2>
             <img src="http://placehold.it/200x150">
           </div> <!-- Night Train Ends Here-->
           <div class="module"> <!-- Air Drummers Starts here -->
-            <h2>Store Front</h2>
-            <img src="http://placehold.it/200x650">
+            <section class="store-front">
+              <header id="store-front-header">
+                <a id="visit-store-photo" href="#"><img class ="seller-image" src="http://lorempixel.com/output/food-q-c-50-50-8.jpg"></a>
+                <a id="visit-store-name" href="#">{{store name}}</a>
+                <h3 id="location-store-front">{{location}}</h3>
+              </header>
+                <ul class="widget">
+                  <li class ="widget-list">
+                    <a href ="#" class ="widget-link">
+                      <img class="widget-image" src="http://lorempixel.com/g/156/124">
+                      <section class="trending-hover-buttons"> <!-- HOVER BUTTONS -->
+                        <div class="hover-favorite-button">
+                       <button class="favorite-button"></button>
+                       </div>
+                       <div class="hover-collect-button">
+                         <button class="collect-button"></button>
+                         <article class="collect-drop-down">
+                           <p>your list</p> <!--TODO: change into ahref and remove link styles -->
+                           <input type="text" class="list-text" placeholder="New list">
+                         </article>
+                       </div>
+                      </section> <!-- END HOVER BUTTONS -->
+                      <div class="widget-details">
+                        <p>{{listing.name}}</p>
+                        <p><span>$<span>{{listing.price}}<span> USD</span></p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class ="widget-list">
+                    <a href ="#" class ="widget-link">
+                      <img class="widget-image" src="http://lorempixel.com/g/156/124">
+                      <section class="trending-hover-buttons"> <!-- HOVER BUTTONS -->
+                        <div class="hover-favorite-button">
+                       <button class="favorite-button"></button>
+                       </div>
+                       <div class="hover-collect-button">
+                         <button class="collect-button"></button>
+                         <article class="collect-drop-down">
+                           <p>your list</p> <!--TODO: change into ahref and remove link styles -->
+                           <input type="text" class="list-text" placeholder="New list">
+                         </article>
+                       </div>
+                      </section> <!-- END HOVER BUTTONS -->
+                      <div class="widget-details">
+                        <p>{{listing.name}}</p>
+                        <p><span>$<span>{{listing.price}}<span> USD</span></p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class ="widget-list">
+                    <a href ="#" class ="widget-link">
+                      <img class="widget-image" src="http://lorempixel.com/g/156/124">
+                      <section class="trending-hover-buttons"> <!-- HOVER BUTTONS -->
+                        <div class="hover-favorite-button">
+                       <button class="favorite-button"></button>
+                       </div>
+                       <div class="hover-collect-button">
+                         <button class="collect-button"></button>
+                         <article class="collect-drop-down">
+                           <p>your list</p> <!--TODO: change into ahref and remove link styles -->
+                           <input type="text" class="list-text" placeholder="New list">
+                         </article>
+                       </div>
+                      </section> <!-- END HOVER BUTTONS -->
+                      <div class="widget-details">
+                        <p>{{listing.name}}</p>
+                        <p><span>$<span>{{listing.price}}<span> USD</span></p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class ="widget-list">
+                    <a href ="#" class ="widget-link">
+                      <img class="widget-image" src="http://lorempixel.com/g/156/124">
+                      <section class="trending-hover-buttons"> <!-- HOVER BUTTONS -->
+                        <div class="hover-favorite-button">
+                       <button class="favorite-button"></button>
+                       </div>
+                       <div class="hover-collect-button">
+                         <button class="collect-button"></button>
+                         <article class="collect-drop-down">
+                           <p>your list</p> <!--TODO: change into ahref and remove link styles -->
+                           <input type="text" class="list-text" placeholder="New list">
+                         </article>
+                       </div>
+                      </section> <!-- END HOVER BUTTONS -->
+                      <div class="widget-details">
+                        <p>{{listing.name}}</p>
+                        <p><span>$<span>{{listing.price}}<span> USD</span></p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class ="widget-list">
+                    <a href ="#" class ="widget-link">
+                      <img class="widget-image" src="http://lorempixel.com/g/156/124">
+                      <section class="trending-hover-buttons"> <!-- HOVER BUTTONS -->
+                        <div class="hover-favorite-button">
+                       <button class="favorite-button"></button>
+                       </div>
+                       <div class="hover-collect-button">
+                         <button class="collect-button"></button>
+                         <article class="collect-drop-down">
+                           <p>your list</p> <!--TODO: change into ahref and remove link styles -->
+                           <input type="text" class="list-text" placeholder="New list">
+                         </article>
+                       </div>
+                      </section> <!-- END HOVER BUTTONS -->
+                      <div class="widget-details">
+                        <p>{{listing.name}}</p>
+                        <p><span>$<span>{{listing.price}}<span> USD</span></p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class ="widget-list">
+                    <a href ="#" class ="widget-link">
+                      <img class="widget-image" src="http://lorempixel.com/g/156/124">
+                      <section class="trending-hover-buttons"> <!-- HOVER BUTTONS -->
+                        <div class="hover-favorite-button">
+                       <button class="favorite-button"></button>
+                       </div>
+                       <div class="hover-collect-button">
+                         <button class="collect-button"></button>
+                         <article class="collect-drop-down">
+                           <p>your list</p> <!--TODO: change into ahref and remove link styles -->
+                           <input type="text" class="list-text" placeholder="New list">
+                         </article>
+                       </div>
+                      </section> <!-- END HOVER BUTTONS -->
+                      <div class="widget-details">
+                        <p>{{listing.name}}</p>
+                        <p><span>$<span>{{listing.price}}<span> USD</span></p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class ="widget-list">
+                    <a href ="#" class ="widget-link">
+                      <img class="widget-image" src="http://lorempixel.com/g/156/124">
+                      <section class="trending-hover-buttons"> <!-- HOVER BUTTONS -->
+                        <div class="hover-favorite-button">
+                       <button class="favorite-button"></button>
+                       </div>
+                       <div class="hover-collect-button">
+                         <button class="collect-button"></button>
+                         <article class="collect-drop-down">
+                           <p>your list</p> <!--TODO: change into ahref and remove link styles -->
+                           <input type="text" class="list-text" placeholder="New list">
+                         </article>
+                       </div>
+                      </section> <!-- END HOVER BUTTONS -->
+                      <div class="widget-details">
+                        <p>{{listing.name}}</p>
+                        <p><span>$<span>{{listing.price}}<span> USD</span></p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class ="widget-list">
+                    <a href ="#" class ="widget-link">
+                      <img class="widget-image" src="http://lorempixel.com/g/156/124">
+                      <section class="trending-hover-buttons"> <!-- HOVER BUTTONS -->
+                        <div class="hover-favorite-button">
+                       <button class="favorite-button"></button>
+                       </div>
+                       <div class="hover-collect-button">
+                         <button class="collect-button"></button>
+                         <article class="collect-drop-down">
+                           <p>your list</p> <!--TODO: change into ahref and remove link styles -->
+                           <input type="text" class="list-text" placeholder="New list">
+                         </article>
+                       </div>
+                      </section> <!-- END HOVER BUTTONS -->
+                      <div class="widget-details">
+                        <p>{{listing.name}}</p>
+                        <p><span>$<span>{{listing.price}}<span> USD</span></p>
+                      </div>
+                    </a>
+                  </li>
+                </section>
+            </section>
           </div> <!-- Air Drummers Ends here -->
         </section> <!-- Right Column Starts Here -->
       </section><!-- .container -->
