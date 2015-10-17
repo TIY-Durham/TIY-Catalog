@@ -1,0 +1,36 @@
+section.image-slider{
+  text-align: center;
+ *, *::before, *::after {
+   box-sizing: border-box;
+ }
+  img {
+    display: block;
+    width: 570px;
+    height: auto;
+  }
+  ul{
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    li {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      img {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        border-radius: 3px;
+        opacity: 0.6;
+      }
+      img.active {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        border-radius: 3px;
+        opacity: 1.0;
+      }
+    }
+  }
+}
