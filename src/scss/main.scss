@@ -95,20 +95,33 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-// // bower:scss
-// @import "../../bower_components/font-awesome/scss/font-awesome.scss";
-// // endbower
+$fa-font-path: '/bower_components/font-awesome/fonts';
+
+// bower:scss
+@import "../../bower_components/font-awesome/scss/font-awesome.scss";
+// endbower
 
 @import "grid";
+
 @import "trending-item-box";
-@import "listing--rating-panel";
 @import "trending-four-column-grid";
-@import "store-front";
+@import "trending-listing-hover";  //Ricecoder
+
+@import "grid-listing-body";
+@import "listing--rating-panel";
+@import "listing-header-other-items";
+@import "listing-header";
+@import "listing--store-front";
+@import "listing-share-media";
+
+// FIXME: Prefix these correctly @ericquayson @karjac14
+@import "fav-button";
+
 
 main.container {
   @extend .grid;
   margin: 0 auto;
-  width: 80%;
+  // width: 80%;
   // width: auto; margin: 0 2%;
   // max-width: 60em;
 

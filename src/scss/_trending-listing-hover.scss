@@ -1,0 +1,128 @@
+.grid {
+  font-family: FontAwesome;
+
+
+      .trending-item-box {
+        position: relative;
+      }
+
+      article.collect-drop-down {
+        display: none;
+      }
+
+
+      button {
+        display: none;
+        background: #ffffff;
+        border: 1px solid #d7d7d4;
+        border-radius: 3px;
+      }
+
+
+      .similar-items {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        color: #0192b5;
+        font-size: 0.8em;
+        position: relative;
+        text-decoration: none;
+        font-family: Arial;
+
+          &::after {
+              font-family: FontAwesome;
+              content: '\f178'; }
+      }
+
+
+      article.trending-item-box:hover {
+
+        .favorite-button {
+          display: inline-block;
+          position: absolute;
+          right: 49px;
+          top: 10px;
+          color: #d7d7d4;
+
+              &::before { //HEART ICON
+                content: '\f004';
+              }
+        }
+
+
+        .favorite-button.user-favorite { //favorited
+          display: inline-block;
+          position: absolute;
+          right: 49px;
+          top: 10px;
+          color: #ff0000;
+
+              &::before {
+                content: '\f004';
+              }
+        }
+
+
+
+        .collect-button {
+          display: inline-block;
+          position: absolute;
+          color: #d7d7d4;
+          right: 10px;
+          top: 10px;
+          padding-right: 4%;
+
+              &::before { //HAMBURG ICON
+                content: "\f0c9";
+                font-size: 9pt;
+                margin-right: 25%;
+              }
+
+              &::after { //CARET ICON
+                content: "\f0d7";
+                font-size: 9pt;
+              }
+        }
+
+          .collect-drop-down::after,
+          .collect-drop-down::before { //CARET
+            bottom: 100%;
+            border: solid transparent;
+            content: " ";
+            position: absolute;
+            pointer-events: none;
+            left: 47%;
+            border-bottom-color: #ffffff;
+            border-width: 7px; //size of caret
+          }
+
+
+          .collect-drop-down.show {
+            position: absolute;
+            display: block;
+            background: #ffffff;
+            border: 1px solid #CBC9C7;
+            padding: 0 10px 10px 10px;
+            right: -45px;
+            top: 50px;
+            z-index:1; // overlays other elements
+
+                    p {
+                      text-transform: uppercase;
+                      color: #CBC9C7;
+                      font-size: 8pt;
+                    }
+
+                    .list-text {
+                      border: 1px solid #D5D4D4;
+                      outline: none;
+                      padding: 5px 5px 4px;
+                      font-size: 8pt;
+                    }
+          }
+
+
+
+      } //.trending-item-box:hover
+
+} //.grid
