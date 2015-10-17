@@ -88,22 +88,19 @@
   float: left;
   }
 }
-li.widget-list:hover {
+li.widget-list:hover{
+    .favorite-button {
+      display: inline-block;
+      position: absolute;
+      right: 49px;
+      top: 10px;
+      color: #d7d7d4;
 
-        .favorite-button {
-          display: inline-block;
-          position: absolute;
-          right: 49px;
-          top: 10px;
-          color: #d7d7d4;
-
-              &::before { //HEART ICON
-                content: '\f004';
-              }
-        }
-
-
-        .favorite-button.user-favorite { //favorited button
+          &::before { //HEART ICON
+            content: '\f004';
+          }
+    }
+    .favorite-button.user-favorite { //favorited button
           display: inline-block;
           position: absolute;
           right: 49px;
@@ -114,9 +111,6 @@ li.widget-list:hover {
                 content: '\f004';
               }
         }
-
-
-
         .collect-button {
           display: inline-block;
           position: absolute;
@@ -136,31 +130,27 @@ li.widget-list:hover {
                 font-size: 9pt;
               }
         }
+
+        article.collect-drop-down {
+               display: none;
+             button {
+               display: none;
+               background: #ffffff ;
+               border: 1px solid #d7d7d4 ;
+               border-radius: 3px;
+             }
+             .similar-items {
+               text-align: center;
+               display: inline-block;
+               width: 100%;
+               color: #0192b5 ;
+               font-size: 0.8em;
+               position: relative;
+               text-decoration: none;
+               font-family: Arial;
+                  &::after {
+                     font-family: FontAwesome;
+                     content: '\f178'; }
+             }
+       }
 }
-article.collect-drop-down {
-       display: none;
-     }
-
-
-     button {
-       display: none;
-       background: #ffffff ;
-       border: 1px solid #d7d7d4 ;
-       border-radius: 3px;
-     }
-
-
-     .similar-items {
-       text-align: center;
-       display: inline-block;
-       width: 100%;
-       color: #0192b5 ;
-       font-size: 0.8em;
-       position: relative;
-       text-decoration: none;
-       font-family: Arial;
-
-         &::after {
-             font-family: FontAwesome;
-             content: '\f178'; }
-     }
