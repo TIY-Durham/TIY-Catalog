@@ -64,7 +64,11 @@ section#shipping-panel {
   section.shipping-policies {
     border-top: 1px solid lightgray;
     color: #666;
+    div {
+      @extend .clearfix;
+      p {
+        padding-left: 10px;
+      }
+    }
   }
-
-
 } // end shpping-panel section
