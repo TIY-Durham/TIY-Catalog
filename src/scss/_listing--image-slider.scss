@@ -1,9 +1,9 @@
-main.container {
-  width: 570px;
+
 section.img-slider{
   text-align: center;
   position: relative;
   width: 100%;
+  margin-top: 0.75em;
  *, *::before, *::after {
    box-sizing: border-box;
  }
@@ -39,7 +39,7 @@ section.img-slider{
     }
     img.img-active {
       display: inline-block;
-      width: 570px;
+      width: 100%;
       height: auto;
       margin: 0 auto;
     }
@@ -100,8 +100,7 @@ section.img-slider{
     font-family: arial, serif;
     color: #999999;
     font-size:  14px;
-    margin-top: -10px;
+    margin-top: -60px;
     font-weight: 500;
   }
-}
 }
