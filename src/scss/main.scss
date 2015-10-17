@@ -100,16 +100,19 @@ textarea {
 // // endbower
 
 @import "grid";
-@import "trending-item-box";
-@import "listing--rating-panel";
-@import "trending-four-column-grid";
 @import "store-front";
+
+@import "trending-item-box";
+@import "trending-four-column-grid";
+
 @import "listing-item-tabs";
+@import "listing-rating-panel";
+
 
 main.container {
   @extend .grid;
-  margin: 0 auto;
-  width: 80%;
+  // margin: 0 auto;
+  // width: 80%;
   // width: auto; margin: 0 2%;
   // max-width: 60em;
 
