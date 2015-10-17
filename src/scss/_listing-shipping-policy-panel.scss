@@ -5,6 +5,7 @@ section#shipping-panel {
   }
 
   section.shipping-payment-methods {
+
     ul.shipping-payment-methods {
       list-style-type: none;
       padding-left: 0;
@@ -37,13 +38,32 @@ section#shipping-panel {
 
   section.shipping-costs {
     border-top: 1px solid lightgray;
+    padding-top: 10px;
     form {
       display: inline-block;
+      margin-right: 15px;
+      margin-bottom: 20px;
+      label {
+        font-size: 12px;
+        font-weight: bold;
+      }
+      select.shipping-country {
+        width: 175px;
+        background-color: white;
+      }
+      a.shipping-get-costs {
+        text-decoration: none;
+        color: #0192b5;
+      }
+    } //end form
+    span {
+      color: gray;
     }
   } //end section.shipping-costs
 
   section.shipping-policies {
     border-top: 1px solid lightgray;
+    color: #666;
   }
 
 
