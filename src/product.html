@@ -27,11 +27,11 @@
 
        <div id="item-tabs-section"><!-- start of the item-tabs feature -->
          <nav id="item-tabs">
-           <a href="#item-details-panel" class="active">Item Details</a>
+           <a href="#item-details-panel" >Item Details</a>
            <a id="ratings-tab" href="#ratings-panel"> ({{ratings}})</a>
-           <a href="#shipping-panel">Shipping & Policies</a>
+           <a href="#shipping-panel" class="active">Shipping & Policies</a>
          </nav>
-         <section id="item-details-panel" class="tabs active">
+         <section id="item-details-panel" class="tabs">
         <!-- feature/listing-item-details-panel place holder -->
            <h3>feature/listing-item-details-panel place holder</h3>
        <!-- end feature/listing-item-details-panel place holder -->
@@ -117,9 +117,67 @@
             </section><!-- .end section reviews -->
          <!-- end of feature/listing-rating-panel place holder -->
          </section>
-         <section id="shipping-panel" class="tabs">
+         <section id="shipping-panel" class="tabs active">
         <!-- feature/listing-shipping-policy-panel place holder -->
-           <h3>feature/listing-shiping-policy place holder</h3>
+
+
+           <section class="shipping-payment-methods">
+             <h4 class="shipping-panel-header">Payment Methods</h4>
+             <ul class="shipping-payment-methods">
+               <li class="paypal"></li>
+               <li class="credit-cards"></li>
+               <li class="etsy"></li>
+             </ul>
+             <h4 class="processing-time">Ready to ship in {{shipping time place holder}}</h4>
+           </section> <!--end shipping-pament info section-->
+           <h4 class="shipping-panel-header">Shipping Costs</h4>
+           <section class="shipping-costs">
+             <form class="shipping-country">
+               <label class="shipping-country-label">Shipping to<br></label>
+               <select class="shipping-country">
+                 <option value="">{{country list}}</option>
+                 <option selected="selected">United States</option>
+               </select>
+             </form>
+             <form class="shipping-zip-code">
+               <label class="shipping-zip-code-label">Zip of Postal Code<br></label>
+               <input class="shipping-zip-code"></input>
+             </form>
+             <form class="shipping-get-costs">
+               <label class="shipping-get-costs-label">Cost<br></label>
+               <a href="#" class="shipping-get-costs">Get Shipping Costs</a>
+             </form>
+             <br>
+             <span class="shipping-multiple-items">Get shipping costs for multiple items in your cart.</span>
+           </section> <!-- end shipping-costs section -->
+           <h4 class="shipping-panel-header">Policies</h4>
+           <section class="shipping-policies">
+             <div class="shipping-policies-payment">
+               <h5 class="col-5-18">Payment</h5>
+               <p class="col-2-3">{{payment policy placeholder}}<p>
+             </div>
+             <div class="shipping-policies-shipping">
+               <h5 class="col-5-18">Shipping</h5>
+               <p class="col-2-3">{{shipping policy placeholder}}</p>
+             </div>
+             <div class="shipping-policies-refunds">
+               <h5 class="col-5-18">Refunds and Exchanges</h5>
+               <p class="col-2-3">{{refund policy placeholder}}</p>
+             </div>
+             <div class="shipping-policies-additional">
+               <h5 class="col-5-18">Additional Policies and FAQ's</h5>
+               <p class="col-2-3">{{additional policies placeholder}}</p>
+             </div>
+             <div class="shipping-policies-seller">
+               <h5 class="col-5-18">Seller Information</h5>
+               <p class="col-2-3">{{seller info placeholder}}</p>
+             </div>
+
+           </section> <!-- end shipping-policies section -->
+
+
+
+
         <!-- end of feature/listing-shipping-policy-panel place holder -->
          </section> <!-- end of shipping policy section-->
        </div><!-- end of the item-tabs feature -->
