@@ -1,0 +1,27 @@
+section#shipping-panel {
+  // background-color: lightgray;
+
+  section.shipping-payment-methods {
+    ul.shipping-payment-methods {
+      list-style-type: none;
+      padding-left: 0;
+
+      li {
+        display: inline-block;
+      }
+    } //end ul
+  }//end section.payment-methods
+
+  section.shipping-costs {
+    border-top: 1px solid lightgray;
+    form {
+      display: inline-block;
+    }
+  } //end section.shipping-costs
+
+  section.shipping-policies {
+    border-top: 1px solid lightgray;
+  }
+
+
+} // end shpping-panel section
