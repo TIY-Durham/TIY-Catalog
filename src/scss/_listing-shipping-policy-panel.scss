@@ -1,5 +1,8 @@
 section#shipping-panel {
   // background-color: lightgray;
+  h4 {
+    font-size: 14px;
+  }
 
   section.shipping-payment-methods {
     ul.shipping-payment-methods {
@@ -9,6 +12,26 @@ section#shipping-panel {
       li {
         display: inline-block;
       }
+
+      li.paypal {
+      background: url(https://www.etsy.com/assets/dist/images/icon_cc_all.20151016163845.png);
+      width: 51px;
+      height: 23px;
+      }
+
+      li.credit-cards {
+        background: url(https://www.etsy.com/assets/dist/images/icon_cc_all.20151016163845.png);
+        background-position-x: -59px;
+        width: 151px;
+        height: 23px;
+      }
+      li.etsy {
+        background: url(https://www.etsy.com/assets/dist/images/icon_cc_all.20151016163845.png);
+        background-position-x: -213px;
+        width: 18px;
+        height: 23px;
+      }
+
     } //end ul
   }//end section.payment-methods
 
