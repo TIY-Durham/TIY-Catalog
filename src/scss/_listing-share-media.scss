@@ -1,11 +1,38 @@
+
+
 section.buttons-fav-add{
-  background-color: lightblue;
+  @extend .clearfix;
+  background-color: white;
+  border-top: 0.5em solid #EFEFEB;
+  border-left: 0.5em solid #EFEFEB;
+  border-right: 0.5em solid #EFEFEB;
+  border-bottom: 0.5em solid #EFEFEB;
+  border-radius: 3px;
+
   button.favor{
     float: left;
     display: inherit;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    //margin: 0.5 0 0.5 0.5;
     }
   button.add{
     display: inherit;
     float: left;
+    margin-left: 1em;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    //margin: 0.5 0.5 0.5 1;
+  }
+}
+
+section.buttons.media.share{
+  background-color: #EFEFEB;
+  nav.media-share{
+  button.tweet{
+
+  }
   }
 }
