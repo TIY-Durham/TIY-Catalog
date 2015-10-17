@@ -95,7 +95,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-$fa-font-path: '/bower_components/font-awesome/fonts';
+$fa-font-path: '../../bower_components/font-awesome/fonts';
 
 // bower:scss
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
@@ -112,8 +112,9 @@ $fa-font-path: '/bower_components/font-awesome/fonts';
 @import "listing-header-other-items";
 @import "listing-header";
 @import "listing--store-front";
+@import "listing--image-slider";
 
-// FIXME: Prefix these correctly @ericquayson @karjac14
+// FIXME: Prefix these correctly @ericquayson
 @import "fav-button";
 
 
