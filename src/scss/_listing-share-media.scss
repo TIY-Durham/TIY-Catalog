@@ -10,29 +10,52 @@ section.buttons-fav-add{
   border-radius: 3px;
 
   button.favor{
+    width: 30%;
+    //height: 35px;
     float: left;
     display: inherit;
-    margin-left: 0.5em;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-left: 0.8em;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
     //margin: 0.5 0 0.5 0.5;
+    i.fa-heart{
+      color:#A9A9A9;
     }
+    }
+  button.favor:hover{
+    background-color: #EFEFEB;
+  }
   button.add{
+    width: 30%;
     display: inherit;
     float: left;
     margin-left: 1em;
-    margin-top: 0.5em;
-    margin-right: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: 0.8em;
+    margin-right: 0.8em;
+    margin-bottom: 0.8em;
     //margin: 0.5 0.5 0.5 1;
+    i.fa-bars{
+      color: #A9A9A9;
+    }
+    i.fa-caret-down{
+      color: #A9A9A9;
+    }
+  }
+  button.add:hover{
+    background-color: #EFEFEB;
   }
 }
 
-section.buttons.media.share{
+section.buttons-media-share{
+  @extend .clearfix;
   background-color: #EFEFEB;
   nav.media-share{
   button.tweet{
-
+    display: inherit;
+    float: left;
+    margin-left: 0.8em;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
   }
   }
 }
