@@ -62,10 +62,26 @@
           </section>
         </header> <!-- Risky Business Ends here -->
         <section class="col col-2-3"> <!-- Left Column Starts Here -->
-          <div class="module"> <!-- Air Drummers Starts here -->
-            <h2>Listing Slide Show</h2>
-            <img src="http://placehold.it/425x500">
-          </div> <!-- Air Drummers Ends here -->
+            <section class="img-slider"> <!-- Air Drummers Starts here -->
+              <div class="img-main">
+                <a href="#" id="prev"><div class = "arrow-case"></div><i class="fa fa-arrow-left"></i></a>
+                <img class= "img-active" src="https://img0.etsystatic.com/047/0/6292388/il_570xN.736798340_td30.jpg">
+                <a href="#" id="next"><div class = "arrow-case"></div><i class="fa fa-arrow-right"></i></a>
+              </div>
+              <ul class="img-list">
+                <li class="img-list-items"><img class="active" src="http://lorempixel.com/32/32/animals"></li>
+                <li class="img-list-items"><img src="http://lorempixel.com/32/32/abstract"></li>
+                <li class="img-list-items"><img src="http://lorempixel.com/32/32/people"></li>
+                <li class="img-list-items"><img src="http://lorempixel.com/32/32/nature"></li>
+                <li class="img-list-items"><img src="http://lorempixel.com/32/32/animals"></li>
+                <li class="img-list-items"><img src="http://lorempixel.com/32/32/people"></li>
+                <li class="img-list-items"><img src="http://lorempixel.com/32/32/abstract"></li>
+                <li class="img-list-items"><img src="http://lorempixel.com/32/32/people"></li>
+                <li class="img-list-items"><img src="http://lorempixel.com/32/32/animals"></li>
+                <li class="img-list-items"><img src="http://lorempixel.com/32/32/abstract"></li>
+              </ul>
+              <h4 id="image-zoom"><i class="fa fa-search-plus"></i>zoom</h4>
+            </section> <!-- Air Drummers Ends here -->
           <div class="module"> <!-- Night Train Starts Here-->
             <h2>Item Details/Reviews/S&amp;P</h2>
             <img src="http://placehold.it/425x850">
@@ -164,8 +180,8 @@
             <h2>Social Share</h2>
             <img src="http://placehold.it/200x150">
           </div> <!-- Night Train Ends Here-->
-          <div class="module"> <!-- Air Drummers Starts here -->
-            <section class="store-front">
+
+            <section class="store-front"> <!-- Air Drummers Starts here -->
               <header id="store-front-header">
                 <a id="visit-store-photo" href="#"><img class ="seller-image" src="http://lorempixel.com/output/food-q-c-50-50-8.jpg"></a>
                 <a id="visit-store-name" href="#">{{store name}}</a>
@@ -340,12 +356,9 @@
                       </div>
                     </a>
                   </li>
-                </section>
-            </section>
-          </div> <!-- Air Drummers Ends here -->
-        </section> <!-- Right Column Starts Here -->
-      </section><!-- .container -->
-
+                </section> <!-- Air Drummers Ends here -->
+            </section> <!-- Right Column Ends Here -->
+        </section> <!-- End of Grid -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
         <script src="../bower_components/angular/angular.js"></script>
