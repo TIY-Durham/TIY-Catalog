@@ -42,6 +42,7 @@
       li.widget-list {
         float: left;
         // display: inline-block;
+        position: relative;
         width: 45%;
         border: 1px solid #999;
         border-radius: 4px;
@@ -86,4 +87,70 @@
   padding: 2px;
   float: left;
   }
+}
+li.widget-list:hover{
+    .favorite-button {
+      display: inline-block;
+      position: absolute;
+      right: 49px;
+      top: 10px;
+      color: #d7d7d4;
+
+          &::before { //HEART ICON
+            content: '\f004';
+          }
+    }
+    .favorite-button.user-favorite { //favorited button
+          display: inline-block;
+          position: absolute;
+          right: 49px;
+          top: 10px;
+          color: #ff0000;
+
+              &::before {
+                content: '\f004';
+              }
+        }
+        .collect-button {
+          display: inline-block;
+          position: absolute;
+          color: #d7d7d4;
+          right: 10px;
+          top: 10px;
+          padding-right: 4%;
+
+              &::before { //HAMBURG ICON
+                content: "\f0c9";
+                font-size: 9pt;
+                margin-right: 25%;
+              }
+
+              &::after { //CARET ICON
+                content: "\f0d7";
+                font-size: 9pt;
+              }
+        }
+
+        article.collect-drop-down {
+               display: none;
+             button {
+               display: none;
+               background: #ffffff ;
+               border: 1px solid #d7d7d4 ;
+               border-radius: 3px;
+             }
+             .similar-items {
+               text-align: center;
+               display: inline-block;
+               width: 100%;
+               color: #0192b5 ;
+               font-size: 0.8em;
+               position: relative;
+               text-decoration: none;
+               font-family: Arial;
+                  &::after {
+                     font-family: FontAwesome;
+                     content: '\f178'; }
+             }
+       }
 }
