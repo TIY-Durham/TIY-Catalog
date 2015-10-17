@@ -1,3 +1,11 @@
-button{
-  color: green;
+section.buttons-fav-add{
+  background-color: lightblue;
+  button.favor{
+    float: left;
+    display: inherit;
+    }
+  button.add{
+    display: inherit;
+    float: left;
+  }
 }
