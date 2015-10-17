@@ -52,9 +52,29 @@ section.buttons-media-share{
   nav.media-share{
   button.tweet{
     display: inherit;
+    background-color: #EFEFEB;
     float: left;
     margin-left: 0.8em;
-    margin-top: 0.8em;
+    margin-top: 0.3em;
+    margin-bottom: 0.8em;
+    i.fa-twitter{
+      color: #1E90FF;
+    }
+  }
+  button.pintit{
+    display: inherit;
+    background-color: #EFEFEB;
+    float: left;
+    margin-left: 1em;
+    margin-top: 0.3em;
+    margin-bottom: 0.8em;
+  }
+  button.tumblr{
+    display: inherit;
+    background-color: #EFEFEB;
+    float: left;
+    margin-left: 1em;
+    margin-top: 0.3em;
     margin-bottom: 0.8em;
   }
   }
