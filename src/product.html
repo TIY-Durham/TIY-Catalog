@@ -1,9 +1,9 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="eng">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Listing</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -93,6 +93,72 @@
               <button class="buy-it-now" type="button">Buy It Now</button>
               <button class="add-to-cart" type="button">Add To Cart</button>
               </section>
+            <h2>Listing Overview</h2>
+            <section class="item-overview">
+            <h1>{{ title }}</h1>
+            <p>{{ price }}</p>
+            <button id="ask-a-question">Ask A Question</button>
+            <!-- Eric your code can go in the inside the aside tag below -->
+            <aside class="listing-options"> <!-- .listing-options -->
+              <label class="options-title">Quantity</label>
+                <select class="options-dropdown">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+              <label class="options-title">One/Both Sides</label>
+                <select class="options-dropdown">
+                  <option>Select an Option</option>
+                  <option>Engrave One Side [$8.50]</option>
+                  <option>Engrave Both Sides [$12.00]</option>
+                </select>
+              <label class="options-title">Wood Type</label>
+                <select class="options-dropdown">
+                  <option>Select an option</option>
+                  <option>Bird's Eye Maple</option>
+                  <option>Black Ash Burl</option>
+                  <option>Black Oak Burl</option>
+                  <option>Bubinga</option>
+                  <option>Cherry</option>
+                  <option>Cherry Burl</option>
+                  <option>Corrugata Burl</option>
+                  <option>Curly Koa</option>
+                  <option>Curly Satinwood</option>
+                  <option>Flame Box Elder</option>
+                  <option>Mahogany</option>
+                  <option>Maple</option>
+                  <option>Maple Burl</option>
+                  <option>Marblewood</option>
+                  <option>Olivewood</option>
+                  <option>Olivewood Burl</option>
+                  <option>Padouk</option>
+                  <option>Sapele</option>
+                  <option>Tigerwood</option>
+                  <option>Tulipwood</option>
+                  <option>Utile</option>
+                  <option>Zebrawood</option>
+                </select>
+            </aside> <!-- .listing-options -->
+            <h3>Overview</h3>
+            <ul>
+              <li>Handmade item</li>
+              <li>Materials: maple, mineral oil, utile, zebrawood, engraving, padouk, cherry, mahogany, burl, tigerwood, oak, olivewood, ash</li>
+              <li>Made to order</li>
+              <li>Ships from Winona Lake, Indiana to select countries.</li>
+              <li>Feedback: {{ count }} reviews</li>
+              <li>Favorited by: {{ ??? }} people</li>
+            </ul>
+            <p class="gift-cards"></p>
+            <button class="buy-it-now" type="button">Buy It Now</button>
+            <button class="add-to-cart" type="button">Add To Cart</button>
+            </section>
           </div> <!-- Risky Business Ends Here-->
           <div class="module"> <!-- Night Train Starts Here-->
             <h2>Social Share</h2>
