@@ -1,0 +1,44 @@
+section.reviews {
+
+  ul.panel-rating {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  li.review {
+    @extend .clearfix;
+    border-bottom: 1px solid lightgray;
+  }
+} //end section.reviews
+
+section.first-column-review {
+  width: 30%;
+  float: left;
+  color: lightgray;
+  margin-top: 1em;
+  text-align: center;
+  img {
+    border-radius: 50%;
+  }
+
+
+} //end section-first-column-review
+
+
+section.second-column-review {
+  width: 70%;
+  float: left;
+  p.review-date {
+    color: lightgray;
+    text-align: right;
+  }
+  div.feedback-stars {
+    margin-top: -10%;
+    color: gold;
+  }
+  p.item-descr-text {
+    color: lightgray;
+    float: right;
+    max-width: 70%;
+  }
+
+} //end section-second-column-review
