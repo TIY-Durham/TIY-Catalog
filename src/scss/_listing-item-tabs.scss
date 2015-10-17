@@ -39,10 +39,10 @@ div#item-tabs-section {
     }
   } //end nav#item-tabs
 
-  section {
+  section.tabs {
     display: none;
   }
-  section.active {
+  section.tabs.active {
     display: inherit;
   }
 }//end div#item-tabs-section
