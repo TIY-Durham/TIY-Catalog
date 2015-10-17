@@ -9,7 +9,7 @@ section.buttons-fav-add{
   border-bottom: 0.5em solid #EFEFEB;
   border-radius: 3px;
 
-  button.favor{
+  button.favorite-button{
     width: 30%;
     //height: 35px;
     float: left;
@@ -22,10 +22,10 @@ section.buttons-fav-add{
       color:#A9A9A9;
     }
     }
-  button.favor:hover{
+  button.favorite-button:hover{
     background-color: #EFEFEB;
   }
-  button.add{
+  button.collect-button{
     width: 30%;
     display: inherit;
     float: left;
@@ -41,7 +41,7 @@ section.buttons-fav-add{
       color: #A9A9A9;
     }
   }
-  button.add:hover{
+  button.collect-button:hover{
     background-color: #EFEFEB;
   }
 }
@@ -76,6 +76,19 @@ section.buttons-media-share{
     margin-left: 1em;
     margin-top: 0.3em;
     margin-bottom: 0.8em;
+  }
+  button.facebook{
+    display: inherit;
+    float: left;
+    margin-left: 1em;
+    margin-top: 0.3em;
+    margin-bottom: 0.8em;
+    background-color: #4169E1;
+    color: white;
+    i.fa-square{
+      color: white;
+    }
+
   }
   }
 }
