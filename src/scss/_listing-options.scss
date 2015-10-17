@@ -41,6 +41,19 @@
   -webkit-appearance: none;
 }
 
+aside.listing-options {
+  display: block;
+  margin-top: 45px;
+  margin-bottom: 5px;
+  label.options-title {
+    padding-top: 10px;
+  }
+  select.options-dropdown {
+    display: block;
+    margin-top: 1.5px;
+    margin-bottom: 10.5px;
+  }
+}
 
 .item-overview h3 {
   color: #333;
