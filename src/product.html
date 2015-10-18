@@ -362,11 +362,11 @@
             <!-- <img src="http://placehold.it/200x150"> -->
           </div> <!-- Night Train Ends Here-->
 
-            <section class="store-front"> <!-- Air Drummers Starts here -->
+         <section class="store-front" ng-app = "store-module"> <!-- Air Drummers Starts here -->
               <header id="store-front-header">
                 <a id="visit-store-photo" href="#"><img class ="seller-image" src="http://lorempixel.com/output/food-q-c-50-50-8.jpg"></a>
-                <a id="visit-store-name" href="#">{{store name}}</a>
-                <h3 id="location-store-front">{{location}}</h3>
+                <a id="visit-store-name" href="#">{{item.results[0].shop_name}}</a>
+                <h3 id="location-store-front">{{item.results[0].shop_location}}</h3>
               </header>
                 <ul class="widget">
                   <li class ="widget-list">
@@ -546,6 +546,7 @@
         <!-- endbower -->
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/store-front.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
