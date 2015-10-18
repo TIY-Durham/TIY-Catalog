@@ -1,5 +1,5 @@
 ;(function(){ // IIFE
-  var module = angular.module('listing-header', [ ]); // End module
+  var app = angular.module('listing-header', [ ]); // End module
 
   module.run(['$rootScope', function($scope){
     $scope. = {
