@@ -1,5 +1,5 @@
-section.reviews {
 
+section.reviews {
   ul.panel-rating {
     list-style-type: none;
     padding-left: 0;
@@ -16,13 +16,13 @@ section.first-column-review {
   color: lightgray;
   margin-top: 1em;
   text-align: center;
-  img {
-    border-radius: 50%;
-  }
-
 
 } //end section-first-column-review
+.first-column-review img {
+  border-radius: 50%;
+  max-width: 45px;
 
+}
 
 section.second-column-review {
   width: 70%;
@@ -38,7 +38,10 @@ section.second-column-review {
   p.item-descr-text {
     color: lightgray;
     float: right;
-    max-width: 70%;
+    // max-width: 70%;
+  }
+  img {
+    max-width: 45px;
   }
 
 } //end section-second-column-review

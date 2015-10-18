@@ -1,14 +1,13 @@
-section.col-2-3 {
-  // background-color: lightgray;
-}
+
 $border-color: #DADBD6;
 
 
 div#item-tabs-section {
-  // margin-top: 10%; //temp to show area - remove for production
+  margin-top: 5%; //temp to show area - remove for production
   // border: solid 1px black; //temp to show area - remove for production
   // padding-top: 5%; //temp to show area - remove for production
   // padding-bottom: 50%; //temp to show area - remove for production
+
   nav#item-tabs {
     text-align: center;
     border-bottom: solid 1px $border-color;

@@ -3,15 +3,17 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>Trending Items</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-
+        <!-- TODO: add link to Guardian-EgypTT font -->
         <!-- bower:css -->
         <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
+        <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css" />
+
         <!-- endbower -->
         <link rel="stylesheet" href="css/main.css">
     </head>
@@ -20,53 +22,119 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <main class="container">
+        <main class="container" ng-app="Tiy-catalog--trending">
           <!-- Add your site or application content here -->
-          <header>
-            <a href="#" class="pg-title">Trending Items</a>
+          <header class="trending">
+            <a href="#" class="pg-title"><h1>Trending Items</h1></a>
             <p>Explore shoppers' top finds from around the marketplace</p>
           </header>
 
+          <div class="main-content">
             <section class="grid">
-              <!-- <div class="col-1-6 pad-1-32">
-                blank
-              </div> -->
-              <div class="col-1-4 pad-1-32">
-                <section class="trending-item-box">
+
+              <section class="col-1-4"> <!-- COLUMN 1 -->
+                <article class="trending-item-box pad-1-8" ng-controller="$rootScope as scope">
                   <a src="#"><img src="http://lorempixel.com/224/299/" class="item-image"></a><!--Link to Listing Page-->
+
+                  <section class="trending-hover-buttons"> <!-- HOVER BUTTONS -->
+                    <div class="hover-favorite-button">
+                      <button class="favorite-button"></button>
+                    </div>
+                    <div class="hover-collect-button">
+                      <button class="collect-button"></button>
+                      <article class="collect-drop-down">
+                        <p>your list</p> <!--TODO: change into ahref and remove link styles -->
+                        <input type="text" class="list-text" placeholder="New list">
+                      </article>
+                  </div>
+                </section> <!-- END HOVER BUTTONS -->
+
                   <div class="listing-info">
-                    <a src="#" class="listing-title"><span >{{listing.title????????????}}</span></a><!--Link to Listing Page-->
+                    <a src="#" class="listing-title"><span >{{scope.results[0].title | limitTo:32}}</span></a><!--Link to Listing Page-->
+                    <a src="#" class="shop-name"><span>{{scope.shop_name | limitTo:13}}</span></a><!--Link to shop Page-->
+                    <a src="#" class="listing-price"><span>{{scope.results[0].listing.price | currency}}USD</span></a><!--Link to shop Page-->
+
+                </article><!-- .item-box -->
+
+                  <div><a href="{{listing.url}}" class="similar-items">See similar items</a></div>
+
+                <article class="trending-item-box pad-1-8">
+                  <a src="#"><img src="http://lorempixel.com/224/240/" class="item-image"></a><!--Link to Listing Page-->
+                  <div class="listing-info">
+                    <a src="#" class="listing-title"><span >{{listing.title}}</span></a><!--Link to Listing Page-->
                     <a src="#" class="shop-name"><span>{{shop_name}}</span></a><!--Link to shop Page-->
-                    <a src="#" class="listing-price"><span>${{listing.price}}USD</span></a><!--Link to shop Page-->
+                    <a src="#" class="listing-price"><span>${{ listing.price}}USD</span></a><!--Link to shop Page-->
+                  </div>
+                </article><!-- .item-box -->
+              </section> <!-- END COLUMN 1 -->
+
+              <section class="col-1-4"> <!-- COLUMN 2 -->
+                <article class="trending-item-box pad-1-8">
+                  <a src="#"><img src="http://lorempixel.com/224/350/" class="item-image"></a><!--Link to Listing Page-->
+                  <div class="listing-info">
+                    <a src="#" class="listing-title"><span >{{listing.title}}</span></a><!--Link to Listing Page-->
+                    <a src="#" class="shop-name"><span>{{shop_name}}</span></a><!--Link to shop Page-->
+                    <a src="#" class="listing-price"><span>${{ listing.price}}USD</span></a><!--Link to shop Page-->
+                  </div>
+                </article><!-- .item-box -->
+                <section class="trending-item-box pad-1-8">
+                  <a src="#"><img src="http://lorempixel.com/224/130/" class="item-image"></a><!--Link to Listing Page-->
+                  <div class="listing-info">
+                    <a src="#" class="listing-title"><span >{{listing.title}}</span></a><!--Link to Listing Page-->
+                    <a src="#" class="shop-name"><span>{{shop_name}}</span></a><!--Link to shop Page-->
+                    <a src="#" class="listing-price"><span>${{ listing.price}}USD</span></a><!--Link to shop Page-->
                   </div>
                 </section><!-- .item-box -->
-              </div>
-              <div class="col-1-4 pad-1-32">
-                <img src="http://lorempixel.com/output/abstract-h-g-234-480-6.jpg">
+              </section> <!-- END COLUMN 2 -->
 
-              </div>
-              <div class="col-1-4 pad-1-32">
-                <img src="http://lorempixel.com/output/abstract-h-g-234-480-6.jpg">
-              </div>
-              <div class="col-1-4 pad-1-32">
-                <img src="http://lorempixel.com/output/abstract-h-g-234-480-6.jpg">
-              </div>
+              <section class="col-1-4"> <!-- COLUMN 3 -->
+                <article class="trending-item-box pad-1-8">
+                  <a src="#"><img src="http://lorempixel.com/224/288/" class="item-image"></a><!--Link to Listing Page-->
+                  <div class="listing-info">
+                    <a src="#" class="listing-title"><span >{{listing.title}}</span></a><!--Link to Listing Page-->
+                    <a src="#" class="shop-name"><span>{{shop_name}}</span></a><!--Link to shop Page-->
+                    <a src="#" class="listing-price"><span>${{ listing.price}}USD</span></a><!--Link to shop Page-->
+                  </div>
+                </article><!-- .item-box -->
+                <article class="trending-item-box pad-1-8">
+                  <a src="#"><img src="http://lorempixel.com/224/230/" class="item-image"></a><!--Link to Listing Page-->
+                  <div class="listing-info">
+                    <a src="#" class="listing-title"><span >{{listing.title}}</span></a><!--Link to Listing Page-->
+                    <a src="#" class="shop-name"><span>{{shop_name}}</span></a><!--Link to shop Page-->
+                    <a src="#" class="listing-price"><span>${{ listing.price}}USD</span></a><!--Link to shop Page-->
+                  </div>
+                </article><!-- .item-box -->
+              </section> <!-- END COLUMN 3 -->
 
-              <section class="row-2">
-                <div class="col-1-4 pad-1-32">
-                   <img src="http://lorempixel.com/output/abstract-h-g-234-480-6.jpg">
-                </div>
-                <div class="col-1-4 pad-1-32">
-                  <img src="http://lorempixel.com/output/abstract-h-g-234-480-6.jpg">
-                </div>
-                <div class="col-1-4 pad-1-32">
-                  <img src="http://lorempixel.com/output/abstract-h-g-234-480-6.jpg">
-                </div>
-                <div class="col-1-4 pad-1-32">
-                  <img src="http://lorempixel.com/output/abstract-h-g-234-480-6.jpg">
-                </div>
-            </section>
+              <section class="col-1-4 pad-1-8"> <!-- COLUMN 4 -->
+                <article class="trending-item-box pad-1-8">
+                  <a src="#"><img src="http://lorempixel.com/224/299/" class="item-image"></a><!--Link to Listing Page-->
+                  <div class="listing-info">
+                    <a src="#" class="listing-title"><span >{{listing.title}}</span></a><!--Link to Listing Page-->
+                    <a src="#" class="shop-name"><span>{{shop_name}}</span></a><!--Link to shop Page-->
+                    <a src="#" class="listing-price"><span>${{ listing.price}}USD</span></a><!--Link to shop Page-->
+                  </div>
+                </article><!-- .item-box -->
+                <article class="trending-item-box pad-1-8">
+                  <a src="#"><img src="http://lorempixel.com/224/210/" class="item-image"></a><!--Link to Listing Page-->
+                  <div class="listing-info">
+                    <a src="#" class="listing-title"><span >{{listing.title}}</span></a><!--Link to Listing Page-->
+                    <a src="#" class="shop-name"><span>{{shop_name}}</span></a><!--Link to shop Page-->
+                    <a src="#" class="listing-price"><span>${{ listing.price}}USD</span></a><!--Link to shop Page-->
+                  </div>
+                </article><!-- .item-box -->
+              </section> <!-- END COLUMN 4 -->
 
+            </section> <!--END GRID-->
+
+            <footer class="throbber"> <!-- SPINNER AND SHOW MORE BUTTON -->
+              <button class="more">Show more items</button>
+              <div class="spinner">
+                <i class="fa fa-spinner fa-pulse"></i>
+            </div>
+            </footer>  <!-- END FOOTER .THROBBER-->
+
+          </div> <!--END MAIN CONTENT-->
 
        </main><!-- .container -->
 
@@ -75,6 +143,7 @@
         <script src="../bower_components/angular/angular.js"></script>
         <!-- endbower -->
         <script src="js/plugins.js"></script>
+        <script src="js/trending.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
