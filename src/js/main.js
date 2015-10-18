@@ -19,6 +19,7 @@ $('.favorite-button').on('click', function(){
   $(this).toggleClass('user-favorite');
 });
 
+// When you click on the drop down input field, add button appears
 $('input.list-text').on('click', function(){
   $('.add-to-list').addClass('active');
 });
