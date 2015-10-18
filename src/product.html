@@ -23,7 +23,7 @@
         <header class="listing--shop" ng-app="listing-header"> <!-- Risky Business Starts here -->
           <aside class="store-profile">
             <a href="https://www.etsy.com/shop/PicasoLab?ref=l2-shop-header-avatar"  class="profile-picture"><img src="https://img0.etsystatic.com/069/0/6605430/isla_280x280.15861056_e85d3p65.jpg" alt="userprofilepicture" style="width:75px;height:75px;border:0;"></a>
-            <a href="https://www.etsy.com/shop/PicasoLab?ref=l2-shop-header-avatar" class="username"><span>PicasoLab</span></a>
+            <a href="https://www.etsy.com/shop/PicasoLab?ref=l2-shop-header-avatar" class="username"><span>{{shop_name}}</span></a>
             <button class="fav-button">Favorite Shop</button>
           </aside>
           <!-- "Store Other Items" - belongs in <header> -->
@@ -53,7 +53,7 @@
               <li class="headerItemCounter headerThumbnail">
                 <div class="innerThumbnail">
                   <a title="{{image-title}}" href="">
-                    <span class="headerItemNumber">{{item-count}}</span>
+                    <span class="headerItemNumber">{{count}}</span>
                     <p>items</p>
                   </a>
                 </div>

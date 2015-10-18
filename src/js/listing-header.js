@@ -1,9 +1,8 @@
 ;(function(){ // IIFE
   var app = angular.module('listing-header', [ ]); // End module
 
-  module.run(['$rootScope', function($scope){
-    $scope. = {
-
-    };
+  app.run(['$rootScope', function($scope){
+    $scope.count = '249';
+    $scope.shop_name = 'PickslaysWoodworking';
   }]);
 })(); // End IIFE
