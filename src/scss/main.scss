@@ -108,7 +108,7 @@ textarea {
 @import "listing-item-tabs";
 @import "listing-rating-panel";
 @import "listing-shipping-policy-panel";
-
+@import "listing--item-details";
 
 main.container {
   @extend .grid;
@@ -118,6 +118,8 @@ main.container {
   // max-width: 60em;
 
 } // END main.container
+
+
 
 // FIXME: Move this chunk into a separate file.
 header { // FIXME: A little more specific here...
