@@ -1,4 +1,4 @@
-main.container {
+header {
   background-color: #F5F4F1;
 }
 
@@ -11,16 +11,8 @@ main.container {
 }
 
 .profile-picture {
-  padding: 10px;
-}
-
-.profile-picture::before {
-  display: table;
-  content: ' ';
-}
-
-.profile-picture::after {
-  clear: both;
+  margin-left: 10px;
+  padding-top: 10px;
 }
 
 .username {
@@ -44,12 +36,11 @@ main.container {
   font-weight:normal;
   border-radius:.4em;
   text-align:center;
-  top: 50px;
   padding-right:.5em;
   float:right;
   position: absolute;
-  margin-left: 27px;
-  margin-top: 10px;
+  margin-left: 30px;
+  margin-top: -25px;
 }
 
 .fav-button:before {

@@ -113,11 +113,13 @@ $fa-font-path: '../../bower_components/font-awesome/fonts';
 @import "listing-header";
 @import "listing--store-front";
 @import "listing-share-media";
+@import "listing-options";
 @import "listing--image-slider";
 
 
 // FIXME: Prefix these correctly @ericquayson
 @import "fav-button";
+@import "item-overview";
 
 
 main.container {
