@@ -50,9 +50,9 @@
                 </section> <!-- END HOVER BUTTONS -->
 
                   <div class="listing-info">
-                    <a src="#" class="listing-title"><span >{{results.title | limitTo:32}}</span></a><!--Link to Listing Page-->
-                    <a src="#" class="shop-name"><span>{{results.shop.name | limitTo:13}}</span></a><!--Link to shop Page-->
-                    <a src="#" class="listing-price"><span>{{scope.results[0].listing.price | currency}}USD</span></a><!--Link to shop Page-->
+                    <a href="product.html" class="listing-title"><span >{{results.title | limitTo:32}}...</span></a><!--Link to Listing Page-->
+                    <a href="https://www.etsy.com/shop/patchesua?ref=l2-shopheader-name" class="shop-name"><span>{{results.shop_name | limitTo:13}}...</span></a><!--Link to shop Page-->
+                    <a href="#" class="listing-price"><span>{{results.price | currency}} USD</span></a><!--Link to shop Page-->
 
                 </article><!-- .item-box -->
 
