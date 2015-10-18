@@ -22,7 +22,7 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <main class="container" ng-controller="TrendingController">
+        <main class="container">
           <!-- Add your site or application content here -->
           <header class="trending">
             <a href="#" class="pg-title"><h1>Trending Items</h1></a>
@@ -33,8 +33,8 @@
             <section class="grid">
 
               <section class="col-1-4"> <!-- COLUMN 1 -->
-                <article class="trending-item-box pad-1-8">
-                  <a src="#"><img ng-src="{{images.url_570xN}}" class="item-image"></a><!--Link to Listing Page-->
+                <article class="trending-item-box pad-1-8" ng-app="trending" ng-controller="ImageController">
+                  <a src="#" ng-repeat="data in url_570xN"><img ng-src="{{results.url_570xN}}" class="item-image"></a><!--Link to Listing Page-->
 
                   <section class="trending-hover-buttons"> <!-- HOVER BUTTONS -->
                     <div class="hover-favorite-button">
