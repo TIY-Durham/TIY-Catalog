@@ -21,7 +21,7 @@
 
     };
 
-    console.log(data); // logs images.json
+    console.log(data); // logs images.json data
 
   }); // END $HTTP
 
