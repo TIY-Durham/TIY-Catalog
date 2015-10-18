@@ -95,7 +95,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-$fa-font-path: '/bower_components/font-awesome/fonts';
+$fa-font-path: '../../bower_components/font-awesome/fonts';
 
 // bower:scss
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
@@ -108,13 +108,22 @@ $fa-font-path: '/bower_components/font-awesome/fonts';
 @import "trending-listing-hover";  //Ricecoder
 
 @import "grid-listing-body";
-@import "listing--rating-panel";
+@import "listing-rating-panel";
 @import "listing-header-other-items";
 @import "listing-header";
 @import "listing--store-front";
+@import "listing-share-media";
+@import "listing-options";
+@import "listing--image-slider";
+@import "listing-item-tabs";
+@import "listing-rating-panel";
+@import "listing-shipping-policy-panel";
+@import "listing--item-details";
 
-// FIXME: Prefix these correctly @ericquayson @karjac14
+
+// FIXME: Prefix these correctly @ericquayson
 @import "fav-button";
+@import "item-overview";
 
 
 main.container {
@@ -125,6 +134,8 @@ main.container {
   // max-width: 60em;
 
 } // END main.container
+
+
 
 // FIXME: Move this chunk into a separate file.
 header { // FIXME: A little more specific here...

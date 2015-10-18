@@ -1,21 +1,46 @@
 ;(function(){
 
-  angular.module('TrendingListing', [ ])
-    .run([ '$rootScope', function($scope){
+  var app = angular.module("trending", [ ]);
+
+  app.controller('TrendingController',[ '$http', '$scope', function($http, $scope){
        // TODO: Get this from JSON instead...
 
+ // $http.get("../apis/etsy/listings/productpage/images.json")
+ //  .then (function(data){
 
-  $scope.listing =
-   $.ajax("../../apis/etsy/listings/trending/trending.json").then(function(data){
-    $scope.listing = data; // Shouldn't this work?
-  });
+    $scope.images = {
 
-  // jQuery.getJSON('/apis/etsy/listing/00000000000.json')
-  //   .then(function(data){
-  //     console.log(data);
+      "url_570xN": "https://img0.etsystatic.com/058/0/6292388/il_570xN.736798362_jvz2.jpg"
+
+    };
+
+
+  // });
+
+
   //
-  //     $scope.listing = data; // Shouldn't this work?
-  //   })
+  // $scope.results = {
+  //   title: 'lion mane',
+  //   price: 11.09,
+  //   shop: {
+  //     name: 'ShopName'
+  //     }
+
+
+
+
+
+
+
+
+
+  //     .then(function(data){
+  //
+  //     $scope.listing = data;
+  //
+  // });
+
+
 
       // AND DON'T DELETE ANYTHING BELOW
     } ])
