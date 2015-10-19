@@ -128,6 +128,7 @@ section.img-slider{
     width: 100%;
     height: auto;
     li.img-list-items {
+      cursor: pointer;
       display: inline-block;
       width: 32px;
       height: 32px;
@@ -137,6 +138,13 @@ section.img-slider{
         width: 100%;
         border-radius: 3px;
         opacity: 0.5;
+      }
+      img:hover {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        border-radius: 3px;
+        opacity: 1.0;
       }
       img.active {
         margin: 0px;

@@ -32,6 +32,8 @@
 
 .grid {
   width: 100%;
+  max-width: 1045px;
+  margin: 0px auto;
 
   // Clearfix that grid yo!
   &:before,
