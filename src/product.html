@@ -20,10 +20,10 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
       <section class="grid">
-        <header> <!-- FIXME: Add class `listing--shop` --><!-- Risky Business Starts here -->
+        <header class="listing--shop" ng-app="listing-header"> <!-- Risky Business Starts here -->
           <aside class="store-profile">
             <a href="https://www.etsy.com/shop/PicasoLab?ref=l2-shop-header-avatar"  class="profile-picture"><img src="https://img0.etsystatic.com/069/0/6605430/isla_280x280.15861056_e85d3p65.jpg" alt="userprofilepicture" style="width:75px;height:75px;border:0;"></a>
-            <a href="https://www.etsy.com/shop/PicasoLab?ref=l2-shop-header-avatar" class="username"><span>PicasoLab</span></a>
+            <a href="https://www.etsy.com/shop/PicasoLab?ref=l2-shop-header-avatar" class="username"><span>{{shop_name}}</span></a>
             <button class="fav-button">Favorite Shop</button>
           </aside>
           <!-- "Store Other Items" - belongs in <header> -->
@@ -53,7 +53,7 @@
               <li class="headerItemCounter headerThumbnail">
                 <div class="innerThumbnail">
                   <a title="{{image-title}}" href="">
-                    <span class="headerItemNumber">{{item-count}}</span>
+                    <span class="headerItemNumber">{{count}}</span>
                     <p>items</p>
                   </a>
                 </div>
@@ -543,6 +543,7 @@
         <script src="js/main.js"></script>
         <script src="js/store-front.js"></script>
         <script src="js/image-slider.js"></script>
+        <script src="js/listing-header.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
