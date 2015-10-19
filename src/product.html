@@ -62,26 +62,21 @@
           </section>
         </header> <!-- Risky Business Ends here -->
         <section class="col col-2-3"> <!-- Left Column Starts Here -->
-            <section class="img-slider"> <!-- Air Drummers Starts here -->
-              <div class="img-main">
-                <a href="#" id="prev"><div class = "arrow-case"></div><i class="fa fa-arrow-left"></i></a>
-                <img class= "img-active" src="https://img0.etsystatic.com/047/0/6292388/il_570xN.736798340_td30.jpg">
-                <a href="#" id="next"><div class = "arrow-case"></div><i class="fa fa-arrow-right"></i></a>
-              </div>
-              <ul class="img-list">
-                <li class="img-list-items"><img class="active" src="http://lorempixel.com/32/32/animals"></li>
-                <li class="img-list-items"><img src="http://lorempixel.com/32/32/abstract"></li>
-                <li class="img-list-items"><img src="http://lorempixel.com/32/32/people"></li>
-                <li class="img-list-items"><img src="http://lorempixel.com/32/32/nature"></li>
-                <li class="img-list-items"><img src="http://lorempixel.com/32/32/animals"></li>
-                <li class="img-list-items"><img src="http://lorempixel.com/32/32/people"></li>
-                <li class="img-list-items"><img src="http://lorempixel.com/32/32/abstract"></li>
-                <li class="img-list-items"><img src="http://lorempixel.com/32/32/people"></li>
-                <li class="img-list-items"><img src="http://lorempixel.com/32/32/animals"></li>
-                <li class="img-list-items"><img src="http://lorempixel.com/32/32/abstract"></li>
-              </ul>
-              <h4 id="image-zoom"><i class="fa fa-search-plus"></i>zoom</h4>
-            </section> <!-- Air Drummers Ends here -->
+          <section class="img-slider" ng-app="slider-module"> <!-- Air Drummers Starts here -->
+            <div class="img-main">
+              <a href="#" id="prev"><div class = "arrow-case"></div><i class="fa fa-arrow-left"></i></a>
+              <img class= "img-active" src={{listingImages.results[0].url_570xN}}>
+              <a href="#" id="next"><div class = "arrow-case"></div><i class="fa fa-arrow-right"></i></a>
+            </div>
+            <ul class="img-list">
+              <li class="img-list-items img1"><img class="active" src={{listingImages.results[0].url_75x75}}></li>
+              <li class="img-list-items img2"><img src={{listingImages.results[1].url_75x75}}></li>
+              <li class="img-list-items img3"><img src={{listingImages.results[2].url_75x75}}></li>
+              <li class="img-list-items img4"><img src={{listingImages.results[3].url_75x75}}></li>
+              <li class="img-list-items img5"><img src={{listingImages.results[4].url_75x75}}></li>
+            </ul>
+            <h4 id="image-zoom"><i class="fa fa-search-plus"></i>zoom</h4>
+          </section> <!-- Air Drummers Ends here -->
           <div class="module"> <!-- Night Train Starts Here-->
 
 
@@ -362,11 +357,11 @@
             <!-- <img src="http://placehold.it/200x150"> -->
           </div> <!-- Night Train Ends Here-->
 
-            <section class="store-front"> <!-- Air Drummers Starts here -->
+         <section class="store-front" ng-app = "store-module"> <!-- Air Drummers Starts here -->
               <header id="store-front-header">
                 <a id="visit-store-photo" href="#"><img class ="seller-image" src="http://lorempixel.com/output/food-q-c-50-50-8.jpg"></a>
-                <a id="visit-store-name" href="#">{{store name}}</a>
-                <h3 id="location-store-front">{{location}}</h3>
+                <a id="visit-store-name" href="#">{{item.results[0].shop_name}}</a>
+                <h3 id="location-store-front">{{item.results[0].shop_location}}</h3>
               </header>
                 <ul class="widget">
                   <li class ="widget-list">
@@ -546,6 +541,8 @@
         <!-- endbower -->
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/store-front.js"></script>
+        <script src="js/image-slider.js"></script>
         <script src="js/listing-header.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

@@ -45,21 +45,22 @@
                       <article class="collect-drop-down">
                         <p>your list</p> <!--TODO: change into ahref and remove link styles -->
                         <input type="text" class="list-text" placeholder="New list">
+                        <button class="add-to-list">Add</button>
                       </article>
                   </div>
                 </section> <!-- END HOVER BUTTONS -->
 
                   <div class="listing-info">
-                    <a src="#" class="listing-title"><span >{{results.title | limitTo:32}}</span></a><!--Link to Listing Page-->
-                    <a src="#" class="shop-name"><span>{{results.shop.name | limitTo:13}}</span></a><!--Link to shop Page-->
-                    <a src="#" class="listing-price"><span>{{scope.results[0].listing.price | currency}}USD</span></a><!--Link to shop Page-->
+                    <a href="product.html" class="listing-title"><span >{{results.title | limitTo:32}}...</span></a><!--Link to Listing Page-->
+                    <a href="https://www.etsy.com/shop/patchesua?ref=l2-shopheader-name" class="shop-name"><span>{{results.shop_name | limitTo:13}}...</span></a><!--Link to shop Page-->
+                    <a href="#" class="listing-price"><span>{{results.price | currency}} USD</span></a><!--Link to shop Page-->
 
                 </article><!-- .item-box -->
 
                   <div><a href="{{listing.url}}" class="similar-items">See similar items</a></div>
 
                 <article class="trending-item-box pad-1-8">
-                  <a src="#"><img src="http://lorempixel.com/224/240/" class="item-image"></a><!--Link to Listing Page-->
+                  <a src="#"><img ng-src="{{images.url_570xN}}" class="item-image"></a><!--Link to Listing Page-->
                   <div class="listing-info">
                     <a src="#" class="listing-title"><span >{{listing.title}}</span></a><!--Link to Listing Page-->
                     <a src="#" class="shop-name"><span>{{listing.shop.name}}</span></a><!--Link to shop Page-->
