@@ -18,18 +18,18 @@
     <body>
 
         <main class="container">
-          <section class="img-slider" ng-app="slider-module" ng-controller="post-image">
+          <section class="img-slider" ng-app="slider-module">
             <div class="img-main">
               <a href="#" id="prev"><div class = "arrow-case"></div><i class="fa fa-arrow-left"></i></a>
-              <img class= "img-active" src="https://img0.etsystatic.com/047/0/6292388/il_570xN.736798340_td30.jpg">
+              <img class= "img-active" src={{listingImages.results[0].url_570xN}}>
               <a href="#" id="next"><div class = "arrow-case"></div><i class="fa fa-arrow-right"></i></a>
             </div>
-            <ul class="img-list" ng-repeat= "img in item">
-              <li class="img-list-items"><img class="active" src={{img.results[0].url_75x75}}></li>
-              <li class="img-list-items"><img class="active" src={{img.results[1].url_75x75}}></li>
-              <li class="img-list-items"><img class="active" src={{img.results[2].url_75x75}}></li>
-              <li class="img-list-items"><img class="active" src={{img.results[3].url_75x75}}></li>
-              <li class="img-list-items"><img class="active" src={{img.results[4].url_75x75}}></li>
+            <ul class="img-list">
+              <li class="img-list-items"><img class="active" src={{listingImages.results[0].url_75x75}}></li>
+              <li class="img-list-items"><img src={{listingImages.results[1].url_75x75}}></li>
+              <li class="img-list-items"><img src={{listingImages.results[2].url_75x75}}></li>
+              <li class="img-list-items"><img src={{listingImages.results[3].url_75x75}}></li>
+              <li class="img-list-items"><img src={{listingImages.results[4].url_75x75}}></li>
             </ul>
             <h4 id="image-zoom"><i class="fa fa-search-plus"></i>zoom</h4>
           </section>
