@@ -10,6 +10,27 @@
     $http.get("../../apis/etsy/listings/productpage/item100384851_images.json") // will work running html in Browser Sync
       .success(function(data){
         $scope.listingImages = data;
+
+        var counter = 0;
+        $('a#next').on('click', function () {
+          if (counter >= 0 && counter <= 3 ) {
+          counter++;
+          var i = counter.toString();
+          $('img.img-active').attr("src",data.results[counter].url_570xN);
+        }
+        });
+        $('a#prev').on('click', function () {
+          if (counter > 0){
+          counter--;
+          var i = counter.toString();
+          $('img.img-active').attr("src",data.results[counter].url_570xN);
+        }
+        });
+
+
+
+
+
       }, function() {
         console.log("cannot find data");
       });
@@ -24,11 +45,6 @@
   //     });
   //   });
 
-  // var counter = 0;
-  // $('a#next').on('click', function () {
-  //   counter++;
-  //   $('img.img-active').value('clics', function () {
-  // })
 
 
 
