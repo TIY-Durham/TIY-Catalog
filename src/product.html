@@ -15,12 +15,12 @@
         <!-- endbower -->
         <link rel="stylesheet" href="css/main.css">
     </head>
-    <body>
+    <body ng-app="data-fetch">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
       <section class="grid">
-        <header class="listing--shop" ng-app="listing-header"> <!-- Risky Business Starts here -->
+        <header class="listing--shop" > <!-- Risky Business Starts here -->
           <aside class="store-profile">
             <a href="https://www.etsy.com/shop/PicasoLab?ref=l2-shop-header-avatar"  class="profile-picture"><img src="https://img0.etsystatic.com/069/0/6605430/isla_280x280.15861056_e85d3p65.jpg" alt="userprofilepicture" style="width:75px;height:75px;border:0;"></a>
             <a href="https://www.etsy.com/shop/PicasoLab?ref=l2-shop-header-avatar" class="username"><span>{{shop_name}}</span></a>
@@ -62,18 +62,18 @@
           </section>
         </header> <!-- Risky Business Ends here -->
         <section class="col col-2-3"> <!-- Left Column Starts Here -->
-          <section class="img-slider" ng-app="slider-module"> <!-- Air Drummers Starts here -->
+          <section class="img-slider"> <!-- Air Drummers Starts here -->
             <div class="img-main">
               <a href="#" id="prev"><div class = "arrow-case"></div><i class="fa fa-arrow-left"></i></a>
-              <img class= "img-active" src={{listingImages.results[0].url_570xN}}>
+              <img class= "img-active" ng-src={{listingImages.results[0].url_570xN}}>
               <a href="#" id="next"><div class = "arrow-case"></div><i class="fa fa-arrow-right"></i></a>
             </div>
             <ul class="img-list">
-              <li class="img-list-items img1"><img class="active" src={{listingImages.results[0].url_75x75}}></li>
-              <li class="img-list-items img2"><img src={{listingImages.results[1].url_75x75}}></li>
-              <li class="img-list-items img3"><img src={{listingImages.results[2].url_75x75}}></li>
-              <li class="img-list-items img4"><img src={{listingImages.results[3].url_75x75}}></li>
-              <li class="img-list-items img5"><img src={{listingImages.results[4].url_75x75}}></li>
+              <li class="img-list-items img1"><img class="active" ng-src={{listingImages.results[0].url_75x75}}></li>
+              <li class="img-list-items img2"><img ng-src={{listingImages.results[1].url_75x75}}></li>
+              <li class="img-list-items img3"><img ng-src={{listingImages.results[2].url_75x75}}></li>
+              <li class="img-list-items img4"><img ng-src={{listingImages.results[3].url_75x75}}></li>
+              <li class="img-list-items img5"><img ng-src={{listingImages.results[4].url_75x75}}></li>
             </ul>
             <h4 id="image-zoom"><i class="fa fa-search-plus"></i>zoom</h4>
           </section> <!-- Air Drummers Ends here -->
@@ -357,7 +357,7 @@
             <!-- <img src="http://placehold.it/200x150"> -->
           </div> <!-- Night Train Ends Here-->
 
-         <section class="store-front" ng-app = "store-module"> <!-- Air Drummers Starts here -->
+         <section class="store-front"> <!-- Air Drummers Starts here -->
               <header id="store-front-header">
                 <a id="visit-store-photo" href="#"><img class ="seller-image" src="http://lorempixel.com/output/food-q-c-50-50-8.jpg"></a>
                 <a id="visit-store-name" href="#">{{item.results[0].shop_name}}</a>
@@ -541,9 +541,9 @@
         <!-- endbower -->
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/store-front.js"></script>
-        <script src="js/image-slider.js"></script>
-        <script src="js/listing-header.js"></script>
+        <script src="js/product-data.js"></script>
+        <!-- <script src="js/image-slider.js"></script>
+        <script src="js/listing-header.js"></script> -->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
