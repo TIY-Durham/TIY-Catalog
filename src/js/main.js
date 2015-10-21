@@ -27,6 +27,20 @@
 (function(){ // IIFE for Angular JS!
   angular.module('TIY-Catalog', [ 'ngRoute' ], function($routeProvider){
     $routeProvider
+      .when('/trending', { // route
+        // controller: 'name of a controller' || function(){ },
+        // controllerAs: 'identifier name for controller?',
+        // template: 'string HTML template' || function(){
+        //   return 'an HTML template';
+        // },
+        // templateUrl: 'string path' || function(){
+        //   return 'string path';
+        // },
+        // resolve: see documentation?
+        // redirectTo: 'string path' || function(){
+        //   return 'string path'
+        // }
+      }) // END when(path, route)
   });
 
   angular.module('TIY-Catalog')
