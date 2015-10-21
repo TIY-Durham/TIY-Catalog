@@ -23,3 +23,25 @@
     $('.add-to-list').addClass('active');
   });
 })(); //end IIFE
+
+(function(){ // IIFE for Angular JS!
+  angular.module('TIY-Catalog', [ ])
+    .run(function($rootScope, $location){
+      // see: https://docs.angularjs.org/api/ng/service/$location
+      $rootScope.page = '.' + $location.path() + '.html';
+    })
+})(); // END IIFE
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* WHY YOU NO LIKE EXTRA LINES ATOM!? */
