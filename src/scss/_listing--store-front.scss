@@ -1,0 +1,159 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+  section.store-front {
+    //  width: 40%;
+        width: 100%;
+        margin:0 auto;
+        margin-top: 0.75em;
+        border: 6px solid #E5F4F7;
+        border-radius: 5px;
+
+    #store-front-header {
+     text-align: center;
+     padding-top: 0.2em;
+    }
+    a#visit-store-photo  {
+      display: block;
+       img.seller-image {
+         width: 50px;
+         height: 50px;
+         border-radius: 3px;
+       }
+     }
+    a#visit-store-name {
+        color: #333;
+        font-size: 18px;
+        font-weight: 500;
+     }
+    h3#location-store-front {
+        color: #999;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    ul.widget {
+      @extend .clearfix;
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+      padding: 0px;
+
+      li.widget-list {
+        float: left;
+        // display: inline-block;
+        position: relative;
+        width: 45%;
+        border: 1px solid #999;
+        list-style: none;
+        border-radius: 4px;
+        margin-bottom: 0.5em;
+        &:nth-of-type(odd) {
+          margin-left: 3%;
+          margin-right: 3%;
+        }
+        &:nth-of-type(even) {
+          margin-right: 3%;
+        }
+        a.widget-link {
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+          p:first-child {
+            margin: 0px;
+            margin-bottom: 3px;
+            padding: 0px;
+            font-size: 12px;
+            color: #555;
+          }
+          p:last-child {
+            font-family: arial, serif;
+            margin: 0px;
+            padding: 0px;
+            font-size: 12px;
+            color: #78c042;
+          }
+        }
+
+      }
+
+    }
+    .column div {
+  border: 1px solid gray;
+  height: 171px;
+  padding: 2px;
+  float: left;
+  }
+}
+li.widget-list:hover{
+    .favorite-button {
+      display: inline-block;
+      position: absolute;
+      right: 49px;
+      top: 10px;
+      color: #d7d7d4;
+
+          &::before { //HEART ICON
+            content: '\f004';
+          }
+    }
+    .favorite-button.user-favorite { //favorited button
+          display: inline-block;
+          position: absolute;
+          right: 49px;
+          top: 10px;
+          color: #ff0000;
+
+              &::before {
+                content: '\f004';
+              }
+        }
+        .collect-button {
+          display: inline-block;
+          position: absolute;
+          color: #d7d7d4;
+          right: 10px;
+          top: 10px;
+          padding-right: 4%;
+
+              &::before { //HAMBURG ICON
+                content: "\f0c9";
+                font-size: 9pt;
+                margin-right: 25%;
+              }
+
+              &::after { //CARET ICON
+                content: "\f0d7";
+                font-size: 9pt;
+              }
+        }
+
+
+        article.collect-drop-down {
+               display: none;
+            button {
+               display: none;
+               background: #ffffff ;
+               border: 1px solid #d7d7d4 ;
+               border-radius: 3px;
+             }
+             .similar-items {
+               text-align: center;
+               display: inline-block;
+               width: 100%;
+               color: #0192b5 ;
+               font-size: 0.8em;
+               position: relative;
+               text-decoration: none;
+               font-family: Arial;
+                  &::after {
+                     font-family: FontAwesome;
+                     content: '\f178'; }
+             }
+       }
+}

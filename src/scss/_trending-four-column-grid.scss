@@ -1,12 +1,55 @@
-.container {
-  // background-color: #d7d7d4;
+main.container {
+  box-sizing: border-box;
+  width: 100%;
 }
 
-.col-1-4 {
-  border: 2px solid orange;
-  background-color: pink;
+
+header.trending {
+  font-family: "Guardian-EgypTT", Georgia, serif;
+  margin: 0 auto;
+  padding-left: 11%;
+  border-top: 1px solid #d7d7d4;
+  border-bottom: 1px solid #d7d7d4;
+  background: #F5F5F1;
+  text-decoration: none;
+
+      h1 {
+        color: #333;
+        size: 22pt;
+        margin-bottom: -1.5%;
+      }
+
+      p {
+        color: #999;
+        size: 16pt;
+        margin-bottom: 2.5%;
+      }
+
+      a[href] {
+        text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+            color: #333;
+          }
+
+      }
+
 }
+
+
+
+.main-content {
+  background: #EFEFEB;
+  width: 100%;
+  border-top: 1px solid #d7d7d4;
+  border-bottom: 1px solid #d7d7d4;
+  padding-top: 2%;
+}
+
+
 
 img {
   text-align: center;
-}
+  width: 100%;
+} // images responsive

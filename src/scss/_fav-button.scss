@@ -1,0 +1,23 @@
+
+.fav-button {
+  border: 1px solid #D3D3D3;
+  height: 3em;
+  background-color: lighten(#F0EAD6, 35%);
+  color: #2C3539;
+  font-weight: normal;
+  border-radius: .4em;
+  text-align: center;
+  padding-right: .5em;
+  position: relative
+}
+
+.fav-button:before {
+  font-family: FontAwesome;
+  content: "\f004";
+  padding-right: .5em;
+}
+
+.fav-button:hover {
+  background-color: #D3D3D3;
+  color: #2C3539;
+}

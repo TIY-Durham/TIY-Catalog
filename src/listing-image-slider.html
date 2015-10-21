@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="" >
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -14,15 +14,25 @@
         <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
         <!-- endbower -->
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/feature--listing-header.css"
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <!--Need containers for the heading-->
+
         <main class="container">
-          <!-- DON'T PUT ANYTHING ELSE IN HERE! -->
+          <section class="img-slider" ng-app="slider-module">
+            <div class="img-main">
+              <a href="#" id="prev"><div class = "arrow-case"></div><i class="fa fa-arrow-left"></i></a>
+              <img class= "img-active" src={{listingImages.results[0].url_570xN}}>
+              <a href="#" id="next"><div class = "arrow-case"></div><i class="fa fa-arrow-right"></i></a>
+            </div>
+            <ul class="img-list">
+              <li class="img-list-items"><img class="active" src={{listingImages.results[0].url_75x75}}></li>
+              <li class="img-list-items"><img src={{listingImages.results[1].url_75x75}}></li>
+              <li class="img-list-items"><img src={{listingImages.results[2].url_75x75}}></li>
+              <li class="img-list-items"><img src={{listingImages.results[3].url_75x75}}></li>
+              <li class="img-list-items"><img src={{listingImages.results[4].url_75x75}}></li>
+            </ul>
+            <h4 id="image-zoom"><i class="fa fa-search-plus"></i>zoom</h4>
+          </section>
         </main><!-- .container -->
 
         <!-- bower:js -->
@@ -31,6 +41,7 @@
         <!-- endbower -->
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/image-slider.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
