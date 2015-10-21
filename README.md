@@ -1,4 +1,1 @@
 # TIY-Catalog
-:D
-:D
-:)
