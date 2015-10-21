@@ -25,11 +25,14 @@
 })(); //end IIFE
 
 (function(){ // IIFE for Angular JS!
-  angular.module('TIY-Catalog', [ ])
-    .run(function($rootScope, $location){
-      // see: https://docs.angularjs.org/api/ng/service/$location
-      $rootScope.page = '.' + $location.path() + '.html';
-    })
+  angular.module('TIY-Catalog', [ 'ngRoute' ], function($routeProvider){
+    $routeProvider
+  });
+
+  angular.module('TIY-Catalog')
+    .config(function($routeProvider){
+      $routeProvider
+    });
 })(); // END IIFE
 
 
