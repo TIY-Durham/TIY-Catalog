@@ -36,11 +36,16 @@
         // templateUrl: 'string path' || function(){
         //   return 'string path';
         // },
+        templateUrl: 'trending.html'
         // resolve: see documentation?
         // redirectTo: 'string path' || function(){
         //   return 'string path'
         // }
       }) // END when(path, route)
+      .when('/listing/0123456789', {
+        templateUrl: 'product.html'
+      })
+
   });
 
   angular.module('TIY-Catalog')
