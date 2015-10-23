@@ -1,14 +1,14 @@
 // Dat IIFE tho...
 ;(function(globals){
 
-angular.module('data-fetch',[])
+angular.module('TIY-Catalog--Listing',[])
 
-  .run(['$rootScope', function($scope){
+  .run(['$rootScope', function($scope){ //header
     $scope.count = '249';
     $scope.shop_name = 'PickslaysWoodworking';
   }])
 
-  .run([ '$rootScope','$http', function($scope, $http){
+  .run([ '$rootScope','$http', function($scope, $http){ //image-slider
     $http.get("../../apis/etsy/listings/productpage/item100384851_images.json") // will work running html in Browser Sync
       .then(function(response){
         console.log(response);
