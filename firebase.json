@@ -1,0 +1,9 @@
+{
+  "firebase": "tiy-catalog",
+  "public": "src",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
