@@ -1,6 +1,6 @@
 {
   "firebase": "tiy-catalog",
-  "public": "src",
+  "public": "dist",
   "ignore": [
     "firebase.json",
     "**/.*",
