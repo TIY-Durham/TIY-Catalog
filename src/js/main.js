@@ -27,6 +27,19 @@
 (function(){ // IIFE for Angular JS!
   angular.module('TIY-Catalog', [ 'ngRoute' ], function($routeProvider){
     $routeProvider
+      .when('/signup', {
+        templateUrl: 'registration-form.html',
+        controller: function(){
+           var signup = this;
+
+           signup.user = { };
+
+           signup.createUser = function(){
+             console.log('CREATE THE USER!');
+           }
+        },
+        controllerAs: 'signup'
+      })
       .when('/trending', { // route
         // controller: 'name of a controller' || function(){ },
         // controllerAs: 'identifier name for controller?',
