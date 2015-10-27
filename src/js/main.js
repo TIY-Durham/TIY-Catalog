@@ -42,8 +42,12 @@
         //   return 'string path'
         // }
       }) // END when(path, route)
-      .when('/listing/0123456789', {
-        templateUrl: 'product.html'
+      .when('/listing/:listing_id', {
+        templateUrl: 'product.html',
+        controller: function($routeParams){
+          // $route.current.params.listing_id
+          console.log($routeParams.listing_id);
+        }
       })
 
   });
